@@ -55,14 +55,8 @@ Each .NET connector needs a **root folder** or **network share**.
 
 ## Windows Account
 
-The  .NET connector needs a **Windows user account**
+The .NET connector needs a **Windows user account**
 
 * with **read and write rights** on each **own installation folder** and sub folders
 * with **read and write rights** on the **CVS root folder** or share and its sub folders
-
-
-
-
-
-
 

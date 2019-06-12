@@ -1,7 +1,9 @@
-# CSV Buyer Specification
 ---
 description: CSV (RFC 4180) buyer side specification
 ---
+
+# CSV Buyer Specification
+
 You can find the supplier side specification in this Google Spreadsheet:
 
 ### [CVS Connector buyer specification](https://docs.google.com/spreadsheets/d/1bdKcYRUDka2PbEPo0OwdXsBGuACwpz7hWatV45zZTjA)
@@ -32,5 +34,4 @@ An error report may be generated in \outgoing\error\order-yyyyddmm-hhmm.txt
 {% file src="../.gitbook/assets/tradecloud-buyer-example-outgoing-order.csv" %}
 
 {% file src="../.gitbook/assets/tradecloud-buyer-example-incoming-order-response.csv" %}
-##  
 
