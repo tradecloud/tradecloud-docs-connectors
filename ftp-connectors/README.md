@@ -26,7 +26,7 @@ Your data format and transport can be set in your company integration settings b
 | Protocol | Description | Port |
 | :--- | :--- | :--- |
 | FTPS | Explicit FTP over TLS | 21 |
-| SFTP | SSH File Transer Protocol  | 22 |
+| SFTP | SSH File Transfer Protocol  | 22 |
 | FTP w/o encryption | &lt;not supported&gt; |  |
 
 ### Username / password
