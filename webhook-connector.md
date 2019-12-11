@@ -66,7 +66,7 @@ You can test the security level of your certificate at [SSL Labs](https://www.ss
 * the web service should support **basic authentication**
 * the HTTP method should be either **GET, POST** or **PUT**
 
-{% api-method method="get" host="" path="/any/path/:orderId" %}
+{% api-method method="get" host="https://yourcompany.com" path="/any/path/:orderId" %}
 {% api-method-summary %}
 Webhook with order id
 {% endapi-method-summary %}
@@ -104,7 +104,7 @@ order identifier
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="" path="/any/path" %}
+{% api-method method="post" host="https://yourcompany.com" path="/any/path" %}
 {% api-method-summary %}
 Webhook with event
 {% endapi-method-summary %}
