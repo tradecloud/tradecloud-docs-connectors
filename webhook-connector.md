@@ -13,9 +13,9 @@ description: >-
 When an order \(response\) is new or has been changed at Tradecloud, we will trigger your webhook.
 
 {% hint style="info" %}
-You can either choose GET which will contain the order id as path or query parameter
+You can either choose **GET** which will contain the **order id** as path or query parameter
 
-Or you can choose POST or PUT which will contain the order event in a JSON body.
+Or you can choose **POST or PUT** which will contain the **order event** in a JSON body.
 {% endhint %}
 
 In case of GET,  the triggered webhook URL contains an order id parameter, for example:
@@ -26,7 +26,7 @@ GET https://yourcompany.com/any/path/:orderId
 
 ### Step 2. Your webhook service fetches the actual order from Tradecloud
 
-In case of **GET**, using the order id, you can fetch the actual order from Tradecloud:
+In case of **GET**, using the **order id**, you can fetch the actual order from Tradecloud:
 
 ```text
 GET https://api.accp.tradecloud1.com/order/:orderId
@@ -44,7 +44,13 @@ GET https://test.tradecloud.nl/api/v1/purchaseOrder/:orderId
 [API v1 GET purchaseOrder specification](https://test.tradecloud.nl/api/v1/docs#!/Purchase_order_API/getOrder)
 {% endhint %}
 
-In case of **POST** or **PUT** you can use the order event inside the request JSON body.
+In case of **POST** or **PUT** you can use the **order event** inside the request JSON body.
+
+{% hint style="warning" %}
+When you **GET the order yourself** you will get **ALL** the order lines. 
+
+When you **use the order event** it will **ONLY** contain the lines **affected** by the order event.
+{% endhint %}
 
 ## Setting up your webhook service
 
