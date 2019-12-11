@@ -153,19 +153,19 @@ As a company admin you may configure a webhook in your company profile on the [T
 ![](.gitbook/assets/tradecloud1-company-webhook-configuration.png)
 
 * Type: select Webhook
-* HTTP method: select GET \(POST is not yet supported\)
-* URL: enter your webhook URL. https and either {orderId} or {legacyOrderId} are required.
-* Username: enter the user name as configured in your webhook service
-* Password: enter the password as configured in your webhook service
+* HTTP method: select **GET**, **POST** or **PUT**
+* URL: enter your webhook URL. **https** and either **{orderId}** or **{legacyOrderId}** are required.
+* Username: enter the **username** as configured in your webhook service
+* Password: enter the **password** as configured in your webhook service
 
 {% hint style="warning" %}
-Use **{orderId}** when you use API version 2 on the tradecloud1.com platform.  
-Use **{legacyOrderId}** when you use API version 1 on the tradecloud.nl platform.
+Use **{orderId}** when you use API version 2 on tradecloud1.com  
+Use **{legacyOrderId}** when you use API version 1 on tradecloud.nl
 {% endhint %}
 
 {% hint style="info" %}
 You can test webhook triggers using [webhook.site](https://webhook.site)  
-Use a bogus password.
+Use bogus username and password.
 {% endhint %}
 
 
