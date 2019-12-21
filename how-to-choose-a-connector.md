@@ -13,7 +13,7 @@ If you have an integration platform such as SAP PI/PO, see integration platforms
          If you already use a standard to integrate such as Edifact or IDocs use:  
           the Edifact FTP Connector or IDocs FTP Connector
 
-If you have a single instance, use the [SAP Webservice Connector](sap-webservice-connector.md)
+If you have a single instance, use the [SAP Webservice Connector](sap-web-service-connector.md)
 
 
 

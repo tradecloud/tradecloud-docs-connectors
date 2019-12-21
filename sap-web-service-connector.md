@@ -4,5 +4,5 @@ description: >-
   only)
 ---
 
-# SAP Webservice Connector
+# SAP Web Service Connector
 
