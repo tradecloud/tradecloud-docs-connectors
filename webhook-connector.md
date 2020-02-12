@@ -37,7 +37,7 @@ GET https://api.accp.tradecloud1.com/order/:orderId
 {% endhint %}
 
 ```text
-GET https://test.tradecloud.nl/api/v1/purchaseOrder/:orderId
+GET https://test.tradecloud.nl/api/v1/purchaseOrder/:legacyOrderId
 ```
 
 {% hint style="info" %}
