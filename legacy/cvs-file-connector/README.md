@@ -4,6 +4,12 @@ description: CSV (RFC 4180) files using a .NET connector installed at the custom
 
 # CVS File Connector
 
+{% hint style="warning" %}
+Deprecated connector on the Tradecloud legacy platform \(tradecloud.nl\)
+
+Use the CSV over FTP connector on the Tradecloud1 platform \(tradecloud1.com\)
+{% endhint %}
+
 Use the CSV file connector in case you want to exchange new and changed orders and order responses using the Tradecloud proprietary CSV format and shared folders on your on premise server as transport.
 
 <table>

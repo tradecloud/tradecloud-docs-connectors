@@ -31,7 +31,7 @@ An error report may be generated in \outgoing\error\order-yyyyddmm-hhmm.txt
 
 ### Buyer Examples
 
-{% file src="../.gitbook/assets/tradecloud-buyer-example-outgoing-order.csv" %}
+{% file src="../../.gitbook/assets/tradecloud-buyer-example-outgoing-order.csv" %}
 
-{% file src="../.gitbook/assets/tradecloud-buyer-example-incoming-order-response.csv" %}
+{% file src="../../.gitbook/assets/tradecloud-buyer-example-incoming-order-response.csv" %}
 

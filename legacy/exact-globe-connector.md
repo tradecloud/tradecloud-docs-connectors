@@ -6,6 +6,12 @@ description: >-
 
 # Exact Globe Connector
 
+{% hint style="warning" %}
+Deprecated connecter on the Tradecloud legacy platform \(tradecloud.nl\)
+
+Use the A B Software Exact Globe Connector on the Tradecloud1 platform \(tradecloud1.com\)
+{% endhint %}
+
 ## Functional requirements
 
 For the purchase order module "orderprestatiedatums" should be enabled.

@@ -2,12 +2,7 @@
 
 * [Overview](README.md)
 * [How to choose a Connector](how-to-choose-a-connector.md)
-* [API's](apis.md)
-* [CVS File Connector](cvs-file-connector/README.md)
-  * [CSV File Connector Requirements](cvs-file-connector/csv-file-connector-requirements.md)
-  * [CSV Buyer Specification](cvs-file-connector/csv-buyer-specification.md)
-  * [CSV Supplier Specification](cvs-file-connector/csv-supplier-specification.md)
-* [Exact Globe Connector](exact-globe-connector.md)
+* [API v2](api-v2.md)
 * [FTP Connectors](ftp-connectors/README.md)
   * [Edifact FTP Connector](ftp-connectors/edifact-ftp-connector.md)
   * [SAP IDoc XML FTP Connector](ftp-connectors/sap-idoc-ftp-connector.md)
@@ -15,4 +10,13 @@
 * [SAP Web Service Connector](sap-web-service-connector.md)
 * [Webhook Connector](webhook-connector.md)
 * [Websockets](websockets.md)
+
+## Legacy
+
+* [API v1](legacy/api-v1.md)
+* [CVS File Connector](legacy/cvs-file-connector/README.md)
+  * [CSV File Connector Requirements](legacy/cvs-file-connector/csv-file-connector-requirements.md)
+  * [CSV Buyer Specification](legacy/cvs-file-connector/csv-buyer-specification.md)
+  * [CSV Supplier Specification](legacy/cvs-file-connector/csv-supplier-specification.md)
+* [Exact Globe Connector](legacy/exact-globe-connector.md)
 

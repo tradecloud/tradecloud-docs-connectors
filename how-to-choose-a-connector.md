@@ -33,7 +33,7 @@ bla
 
 ### Mulesoft, Seeburger, Tibco Scribe
 
-You can best integrate using our service [API's](apis.md)
+You can best integrate using our service [API's](api-v2.md)
 
 ### **None**
 
