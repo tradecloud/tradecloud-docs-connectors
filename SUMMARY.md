@@ -7,7 +7,7 @@
   * [Edifact FTP Connector](ftp-connectors/edifact-ftp-connector.md)
   * [SAP IDoc XML FTP Connector](ftp-connectors/sap-idoc-ftp-connector.md)
   * [CSV FTP Connector](ftp-connectors/csv-ftp-connector.md)
-* [SAP Web Service Connector](sap-web-service-connector.md)
+* [SAP SOAP Connector](sap-soap-connector.md)
 * [Webhook Connector](webhook-connector.md)
 * [Websockets](websockets.md)
 

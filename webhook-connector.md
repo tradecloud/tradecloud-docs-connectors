@@ -26,14 +26,14 @@ GET https://yourcompany.com/any/path/:orderId
 
 ### Step 2. Your webhook service fetches the actual order from Tradecloud
 
-In case of **GET**, using the **order id**, you can fetch the actual order from Tradecloud:
+In case of a **GET webhook**, using the **order id** you can fetch the actual order from Tradecloud:
 
 ```text
 GET https://api.accp.tradecloud1.com/order/:orderId
 ```
 
 {% hint style="info" %}
-[API v2 GET order specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
+[API v2 GET order OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
 {% endhint %}
 
 ```text
@@ -41,10 +41,14 @@ GET https://test.tradecloud.nl/api/v1/purchaseOrder/:legacyOrderId
 ```
 
 {% hint style="info" %}
-[API v1 GET purchaseOrder specification](https://test.tradecloud.nl/api/v1/docs#!/Purchase_order_API/getOrder)
+[API v1 GET purchaseOrder OpenAPI specification](https://test.tradecloud.nl/api/v1/docs#!/Purchase_order_API/getOrder)
 {% endhint %}
 
-In case of **POST** or **PUT** you can use the **order event** inside the request JSON body.
+In case of **POST** or **PUT** **webhook** you can use the **order event** inside the request JSON body:
+
+{% hint style="info" %}
+[POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
+{% endhint %}
 
 {% hint style="warning" %}
 When you **GET the order yourself** you will get **ALL** the order lines. 
@@ -110,6 +114,10 @@ order identifier
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% hint style="info" %}
+[GET webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookGet)
+{% endhint %}
+
 {% api-method method="post" host="https://yourcompany.com" path="/any/path" %}
 {% api-method-summary %}
 Webhook with event
@@ -144,8 +152,7 @@ Order event JSON body
 {% endapi-method %}
 
 {% hint style="info" %}
-The webhook body is equal to the [Find order by id](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute) response body  
-The body will ONLY contain the lines affected by the order event.
+[POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
 {% endhint %}
 
 {% hint style="info" %}
