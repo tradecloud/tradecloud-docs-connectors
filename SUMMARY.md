@@ -3,6 +3,7 @@
 * [Overview](README.md)
 * [How to choose a Connector](how-to-choose-a-connector.md)
 * [API v2](api-v2.md)
+* [Azure Active Directory Connector](azure-ad-connector.md)
 * [FTP Connectors](ftp-connectors/README.md)
   * [Edifact FTP Connector](ftp-connectors/edifact-ftp-connector.md)
   * [SAP IDoc XML FTP Connector](ftp-connectors/sap-idoc-ftp-connector.md)
