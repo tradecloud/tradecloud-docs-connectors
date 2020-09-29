@@ -1,4 +1,4 @@
-# Azure Active Directory Connector
+# Azure Active Directory Connector - AD Side
 
 The Azure AD Connector provides Single Sign On access for your users on Tradecloud.
 
