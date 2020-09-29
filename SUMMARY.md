@@ -3,6 +3,7 @@
 * [Overview](README.md)
 * [How to choose a Connector](how-to-choose-a-connector.md)
 * [API v2](api-v2.md)
+* [Azure Active Directory Connector - Tradecloud Side](azure-active-directory-connector-tradecloud-side.md)
 * [Azure Active Directory Connector - Auth0 Side](azure-active-directory-connector-auth0-side.md)
 * [Azure Active Directory Connector - AD Side](azure-ad-connector.md)
 * [FTP Connectors](ftp-connectors/README.md)

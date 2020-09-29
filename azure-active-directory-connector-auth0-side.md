@@ -11,6 +11,7 @@ The detailed setup process is described at this link [https://auth0.com/docs/con
 ## Configuration Summary
 
 * Navigate to the [Connections &gt; Enterprise](https://manage.auth0.com/#/connections/enterprise) page in the [Auth0 Dashboard](https://manage.auth0.com/#/), and click the `+` next to **Microsoft Azure AD**
+* **ENTER A RELEVANT NAME**. Like &lt;teneant&gt;-&lt;environment&gt; e.g. damen-accp 
 * Enter general information for your connection.
 * Enter Client ID and Client Secret which we get after adding a new application in Azure AD
 * Click **Create**.
