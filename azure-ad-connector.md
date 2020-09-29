@@ -1,3 +1,10 @@
+---
+description: >-
+  This page describes the configurations that are needed on Azure Active
+  Directory in order to be able to login to Tradecloud using Azure AD
+  credentials
+---
+
 # Azure Active Directory Connector - AD Side
 
 The Azure AD Connector provides Single Sign On access for your users on Tradecloud.
