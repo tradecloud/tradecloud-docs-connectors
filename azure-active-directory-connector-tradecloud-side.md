@@ -4,7 +4,7 @@
 
 Get the name of the enterprise connection added in step [https://auth0.com/docs/connections/enterprise/azure-active-directory/v2\#create-an-enterprise-connection-in-auth0](https://auth0.com/docs/connections/enterprise/azure-active-directory/v2#create-an-enterprise-connection-in-auth0) and then add its mapping in file `src/app/auth/routes/login/state/sso.connections.ts` .
 
-Currently, src/app/auth/routes/login/state/sso.connections.ts has the following mapping
+Currently, src/app/auth/routes/login/state/sso.connections.ts has the following mappings
 
 ```text
 const ssoMap: SsoConnectionMap = {
