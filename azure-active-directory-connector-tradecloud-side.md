@@ -19,7 +19,7 @@ Here keys are the email domains and the values are the enterprise connections
 
 ## Microservices Configuration
 
-Similar configuration needs to be added to the application.conf in **authentication and user** microservices. Here is what the configuration looks like
+Similar configuration needs to be added to the application.conf in **both** **authentication and user** microservices. Here is what the configuration looks like
 
 ```text
 sso {
