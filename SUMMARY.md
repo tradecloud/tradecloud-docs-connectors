@@ -13,7 +13,7 @@
   * [CSV FTP Connector](ftp-connectors/csv-ftp-connector.md)
 * [SAP SOAP Connector](sap-soap-connector.md)
 * [Webhook Connector](webhook-connector.md)
-* [Websockets](websockets.md)
+* [WebSockets](websockets.md)
 
 ## Legacy
 
