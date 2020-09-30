@@ -15,6 +15,6 @@ The detailed setup process is described at this link [https://auth0.com/docs/con
 * Enter general information for your connection.
 * Enter Client ID and Client Secret which we get after adding a new application in Azure AD
 * Click **Create**.
-* To use your new Azure AD enterprise connection, you must first [enable the connection](https://auth0.com/docs/dashboard/guides/connections/enable-connections-enterprise) for both portal and api application.
+* To use your new Azure AD enterprise connection, you must first [enable the connection](https://auth0.com/docs/dashboard/guides/connections/enable-connections-enterprise) for both portal and api applications.
 * Now you're ready to [test your connection](https://auth0.com/docs/dashboard/guides/connections/test-connections-enterprise). 
 
