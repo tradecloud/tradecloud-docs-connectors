@@ -61,7 +61,12 @@ While setting up your permissions, configure the following settings:
       <td style="text-align:left">
         <p>Users &gt; User.Read</p>
         <p>Directory &gt; Directory.Read.All</p>
+        <p>Directory &gt; Directory.AccessAsUser.All</p>
       </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Application permissions</td>
+      <td style="text-align:left">Directory &gt; Directory.Read.All</td>
     </tr>
   </tbody>
 </table>
