@@ -37,7 +37,7 @@ To create a client secret, see Microsoft's [Quickstart: Configure a client appli
 
 Once generated, **make note of this value**.
 
-If you configure an expiring secret, make sure to **record the expiration date**; you will need to renew the key before that day to avoid a service interruption. We recommend you choose "never expires"
+If you configure an expiring secret, make sure to **record the expiration date**; you will need to renew the key before that day to avoid a service interruption. We recommend you choose "**never expires**"
 
 ### Add permissions
 
