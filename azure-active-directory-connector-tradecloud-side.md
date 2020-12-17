@@ -24,10 +24,10 @@ Similar configuration needs to be added to the application.conf in **both** **au
 ```text
 sso {
    domainMapping {
-     tradecloud2.onmicrosoft.com = "06893bba-e131-4268-87c9-7fae64e16ee9"
-     tradecloud1test.onmicrosoft.com = "06893bba-e131-4268-87c9-7fae64e16ee9"
-     tradecloud1accp.onmicrosoft.com = "06893bba-e131-4268-87c9-7fae64e16ee9"
-     tradecloud1.onmicrosoft.com = "06893bba-e131-4268-87c9-7fae64e16ee9"
+     tradecloud2.onmicrosoft.com = "5047cf93-1863-478b-8739-99ea66b5861d"
+     tradecloud1test.onmicrosoft.com = "5047cf93-1863-478b-8739-99ea66b5861d"
+     tradecloud1accp.onmicrosoft.com = "5047cf93-1863-478b-8739-99ea66b5861d"
+     tradecloud1.onmicrosoft.com = "5047cf93-1863-478b-8739-99ea66b5861d"
    }
 }
 ```
