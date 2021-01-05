@@ -27,17 +27,9 @@ During registration, configure the following settings:
 | Option | Setting |
 | :--- | :--- |
 | Supported account types | To allow users from external organizations \(like other Azure AD directories\) choose the appropriate multitenant option. Multitenant options include the following: Accounts in any organizational directory \(Any Azure AD directory - Multitenant\). |
-| Redirect URI | Enter your callback URL:  [https://portal.tradecloud1.com/auth0-callback](https://portal.tradecloud1.com/auth0-callback) |
+| Redirect URI | Enter your callback URL:  [https://portal.tradecloud1.com/msal-callback/login](https://portal.tradecloud1.com/msal-callback/login) |
 
-During this process, Microsoft generates an Application \(client\) ID for the application; you can find this on the app's Overview screen. Make note of this value.
-
-### Create a client secret
-
-To create a client secret, see Microsoft's [Quickstart: Configure a client application to access web APIs - Add Credentials to your web application](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application).
-
-Once generated, **make note of this value**.
-
-If you configure an expiring secret, make sure to **record the expiration date**; you will need to renew the key before that day to avoid a service interruption. We recommend you choose "**never expires**"
+During this process, Microsoft generates an Application \(client\) ID; you can find this on the app's Overview screen. Take note of this value.
 
 ### Add permissions
 
@@ -59,19 +51,16 @@ While setting up your permissions, configure the following settings:
     <tr>
       <td style="text-align:left">Delegated permissions</td>
       <td style="text-align:left">
-        <p>Users &gt; User.Read</p>
-        <p>Directory &gt; Directory.Read.All</p>
-        <p>Directory &gt; Directory.AccessAsUser.All</p>
+        <p>email</p>
+        <p>profile</p>
       </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Application permissions</td>
-      <td style="text-align:left">Directory &gt; Directory.Read.All</td>
     </tr>
   </tbody>
 </table>
 
 ### Send credentials to Tradecloud
 
-Send client id and client secret using a secure email or a secure link to Tradecloud so that one of the engineers can configure SSO for you.
+Send client id and tenant id to Tradecloud so that one of the engineers can configure SSO for you.
+
+![](../.gitbook/assets/image%20%282%29.png)
 

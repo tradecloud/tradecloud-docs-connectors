@@ -5,7 +5,6 @@
 * [API v2](api-v2.md)
 * [Azure Active Directory Connector](azure-active-directory-connector/README.md)
   * [Azure AD Connector - AD Configuration](azure-active-directory-connector/ad-config.md)
-  * [Azure AD Connector - Auth0 Configuration](azure-active-directory-connector/auth0-config.md)
   * [Azure AD Connector - Tradecloud Configuration](azure-active-directory-connector/tradecloud-config.md)
 * [FTP Connectors](ftp-connectors/README.md)
   * [Edifact FTP Connector](ftp-connectors/edifact-ftp-connector.md)

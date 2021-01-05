@@ -44,7 +44,7 @@ sso {
 
 Here keys are the email domains and the values are the company ids
 
-path of application.conf in authentication microservice - authentication/src/main/resources/application.conf 
+path of application.conf in authentication microservice - authentication/src/main/resources/application.conf
 
 path of application.conf in user microservice - user/src/main/resources/application.conf
 

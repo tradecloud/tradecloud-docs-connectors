@@ -16,8 +16,6 @@ For customers
 
 For Tradecloud support
 
-{% page-ref page="auth0-config.md" %}
-
 {% page-ref page="tradecloud-config.md" %}
 
 
