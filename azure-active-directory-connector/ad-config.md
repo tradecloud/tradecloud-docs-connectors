@@ -35,7 +35,7 @@ During this process, Microsoft generates an Application \(client\) ID; you can f
 
 We need to make sure id\_token has the required information needed by Tradecloud to create the user
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 ### Add permissions
 
@@ -73,7 +73,19 @@ While setting up your permissions, configure the following settings:
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
-### 
+### Set Redirect URI
+
+Select the option to set Redirect URI
+
+![](../.gitbook/assets/image%20%287%29.png)
+
+Select the platform as Single page application
+
+![](../.gitbook/assets/image%20%286%29.png)
+
+Set the Redirect Uri value to [https://tradecloud1.com/msal-callback/login](https://tradecloud1.com/msal-callback/login) and save
+
+![](../.gitbook/assets/image%20%2810%29.png)
 
 ### Send credentials to Tradecloud
 
