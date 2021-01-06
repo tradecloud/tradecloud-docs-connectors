@@ -31,13 +31,19 @@ During registration, configure the following settings:
 
 During this process, Microsoft generates an Application \(client\) ID; you can find this on the app's Overview screen. Take note of this value.
 
+### Token Configuration
+
+We need to make sure id\_token has the required information needed by Tradecloud to create the user
+
+![](../.gitbook/assets/image%20%285%29.png)
+
 ### Add permissions
 
-Tradecloud needs OpenID delegated `email`and `profile` permissions to be able to create a Tradecloud identity and user. The email, given name and family name will be added to the id token, which Tradecloud uses to create a identity and user. Tradecloud will NOT call the Graph API.
+Tradecloud needs OpenID delegated `email`and `profile` permissions to be able to create a Tradecloud identity and user. The email, given name, and family name will be added to the id token, which Tradecloud uses to create an identity and user. Tradecloud will NOT call the Graph API.
 
 To add permissions, see Microsoft's [Quickstart: Configure a client application to access web APIs - Add permissions to access web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
-You will need to configur OpenID permissions for the **Microsoft Graph API**.
+You will need to configure OpenID permissions for the **Microsoft Graph API**.
 
 While setting up your permissions, configure the following settings:
 
@@ -64,6 +70,10 @@ While setting up your permissions, configure the following settings:
     </tr>
   </tbody>
 </table>
+
+![](../.gitbook/assets/image%20%284%29.png)
+
+### 
 
 ### Send credentials to Tradecloud
 
