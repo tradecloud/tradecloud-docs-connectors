@@ -14,37 +14,26 @@ This configuration will be added by Tradecloud support.
 
 Configuration file for SSO mappings is  `src/app/auth/routes/login/state/sso.connections.ts` .
 
-Currently, src/app/auth/routes/login/state/sso.connections.ts has the following mappings
+src/app/auth/routes/login/state/sso.connections.ts example:
 
 ```text
 export const azureAppMappings: AzureConnectionMappings = {  
   tradecloud1prod: {
-    clientId: '99f40fa5-fbed-4d23-b8ef-4e2d25205eff',
-    tenantId: 'fc2e432f-1e78-4e28-ac62-33861e815454',
+    clientId: 'HIDDEN',
+    tenantId: 'HIDDEN',
   },
-  damenaccp: {
-    // TODO: add real credentials for damenaccp. ASK MARCEL
-    clientId: 'ADD IT',
-    tenantId: 'ADD IT',
-  },
-  damenprod: {
-    // TODO: add real credentials for damenprod. ASK MARCEL
-    clientId: 'ADD IT',
-    tenantId: 'ADD IT',
-  },
+  tradecloud1accp: {
+    clientId: 'HIDDEN',
+    tenantId: 'HIDDEN',
+  }
 };
 
 const globalDomainMappings: SsoConnectionMap = {
-  'tradecloud1local.onmicrosoft.com': 'tradecloud1local',
-  'tradecloud1test.onmicrosoft.com': 'tradecloud1test',
-  'tradecloud1accp.onmicrosoft.com': 'tradecloud1accp',
-  'tradecloud1.onmicrosoft.com': 'tradecloud1prod',
+  'tradecloud1.onmicrosoft.com': 'tradecloud1prod'
 };
 
 const connectionsByEmail: { [email: string]: AzureConnection } = {
-  'user@tradecloud1local.com': 'tradecloud1local',
-  'user1@tradecloud1local.com': 'tradecloud1accp',
-  'shubham.gupta@damen.com': 'damenaccp',
+  'user@tradecloud1accp.onmicrosoft.com': 'tradecloud1accp'
 };
 
 ```
@@ -64,13 +53,13 @@ sso {
    domainMapping = [
      {
         domain = "tradecloud1.onmicrosoft.com"
-        companyId =  "06893bba-e131-4268-87c9-7fae64e16ee9"
-        tenantId =  "fc2e432f-1e78-4e28-ac62-33861e815454"
+        companyId =  "HIDDEN"
+        tenantId =  "HIDDEN"
      },
      {
-        domain = "damen.com"
-        companyId =  "12680143-ccab-571b-bddd-ad353e3b30a7"
-        tenantId =  "ADD IT"
+        domain = "tradecloud1accp.onmicrosoft.com"
+        companyId =  "HIDDEN"
+        tenantId =  "HIDDEN"
      }
    ]
 }
