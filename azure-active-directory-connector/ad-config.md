@@ -33,9 +33,11 @@ During this process, Microsoft generates an Application \(client\) ID; you can f
 
 ### Add permissions
 
+Tradecloud needs OpenID delegated `email`and `profile` permissions to be able to create a Tradecloud identity and user. The email, given name and family name will be added to the id token, which Tradecloud uses to create a identity and user. Tradecloud will NOT call the Graph API.
+
 To add permissions, see Microsoft's [Quickstart: Configure a client application to access web APIs - Add permissions to access web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
-You will need to configure permissions for the **Microsoft Graph API**.
+You will need to configur OpenID permissions for the **Microsoft Graph API**.
 
 While setting up your permissions, configure the following settings:
 
@@ -43,8 +45,9 @@ While setting up your permissions, configure the following settings:
   <thead>
     <tr>
       <th style="text-align:left">Permission Section</th>
-      <th style="text-align:left"><b>Permission/Field</b>
+      <th style="text-align:left"><b>Permission</b>
       </th>
+      <th style="text-align:left">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -53,6 +56,10 @@ While setting up your permissions, configure the following settings:
       <td style="text-align:left">
         <p>email</p>
         <p>profile</p>
+      </td>
+      <td style="text-align:left">
+        <p>View users&apos; email address</p>
+        <p>View users&apos; basic profile</p>
       </td>
     </tr>
   </tbody>
