@@ -46,7 +46,7 @@ You can override the global domain configuration and have it specific to a user.
 
 ## Microservices Configuration
 
-Similar configuration needs to be added to the application.conf in **both** **authentication and user** microservices. Here is what the configuration looks like
+Similar configuration needs to be added to the application.conf in **both** **authentication and user** microservices. Here is a configuration example:
 
 ```text
 sso {
