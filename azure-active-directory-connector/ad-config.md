@@ -50,7 +50,7 @@ While setting up your token configuration, add the following claims:
 
 ### Add permissions
 
-To add the `email` `family_name`  __`given_name`  __and __`upn` claims Azure AD requires OpenID `email`and `profile` permissions. These fields will be added to the id\_token, which Tradecloud uses to create an identity and user. Tradecloud will NOT call the Graph API.
+To add the `email` `family_name`  __`given_name`  __and __`upn` claims to the id\_token, Azure AD requires OpenID delegated `email`and `profile` permissions. These fields will be added to the id\_token, which Tradecloud uses to create an identity and user. Tradecloud will NOT call the Graph API.
 
 To add permissions, see Microsoft's [Quickstart: Configure a client application to access web APIs - Add permissions to access web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
