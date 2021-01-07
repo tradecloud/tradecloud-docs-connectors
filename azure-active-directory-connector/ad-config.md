@@ -31,15 +31,26 @@ During registration, configure the following settings:
 
 During this process, Microsoft generates an Application \(client\) ID; you can find this on the app's Overview screen. Take note of this value.
 
-### Token Configuration
+### Token configuration
 
-We need to make sure id\_token has the required information needed by Tradecloud to create the user
+Optional claims are used to configure additional information which is returned in the id\_token.
+
+Tradecloud needs `email` `family_name`  __`given_name`  __and __`upn` __claims __to be able to create a Tradecloud identity and user. These fields will be added to the id\_token, which Tradecloud uses to create a Tradecloud identity and user.
+
+While setting up your token configuration, add the following claims:
+
+| Claim | Description | Token type |
+| :--- | :--- | :--- |
+| email | The addressable email for this user, if the user has one | ID |
+| family\_name | Provides the last name, surname, or family name of the user as defined in the user object | ID |
+| given\_name | Provides the first or "given" name of the user, as set on the user object | ID |
+| upn | An identifier for the user that can be used with the username\_hint parameter; not a durable identifier for the user and should not be used to key data | ID |
 
 ![](../.gitbook/assets/image%20%288%29.png)
 
 ### Add permissions
 
-Tradecloud needs OpenID delegated `email`and `profile` permissions to be able to create a Tradecloud identity and user. The email, given name, and family name will be added to the id token, which Tradecloud uses to create an identity and user. Tradecloud will NOT call the Graph API.
+To add the `email` `family_name`  __`given_name`  __and __`upn` claims Azure AD requires OpenID `email`and `profile` permissions. These fields will be added to the id\_token, which Tradecloud uses to create an identity and user. Tradecloud will NOT call the Graph API.
 
 To add permissions, see Microsoft's [Quickstart: Configure a client application to access web APIs - Add permissions to access web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis).
 
