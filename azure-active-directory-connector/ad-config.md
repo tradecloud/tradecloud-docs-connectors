@@ -94,7 +94,7 @@ Select the platform as Single page application
 
 ![](../.gitbook/assets/image%20%286%29.png)
 
-Set the Redirect Uri value to [https://tradecloud1.com/msal-callback/login](https://tradecloud1.com/msal-callback/login) and save
+Set the Redirect Uri value to [https://portal.tradecloud1.com/msal-callback/login](https://tradecloud1.com/msal-callback/login) and save
 
 ![](../.gitbook/assets/image%20%2810%29.png)
 
