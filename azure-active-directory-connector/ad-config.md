@@ -20,16 +20,23 @@ The Azure AD Connector is an add-on. Contact sales@tradecloud1.com for info.
 
 To allow users to log in using a Azure AD account, you must register Tradecloud as an application in the Microsoft Azure portal
 
-To register your app with Azure AD, see Microsoft's [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
+To register your app with Azure AD, see Microsoft's Quickstart: Register an application with the Microsoft identity platform.
 
 During registration, configure the following settings:
 
 | Option | Setting |
 | :--- | :--- |
 | Supported account types | To allow users from external organizations \(like other Azure AD directories\) choose the appropriate multitenant option. Multitenant options include the following: Accounts in any organizational directory \(Any Azure AD directory - Multitenant\). |
-| Redirect URI | Enter your callback URL:  [https://portal.tradecloud1.com/msal-callback/login](https://portal.tradecloud1.com/msal-callback/login) |
+| Redirect URI | Select "Single -page application \(SPA\)" |
+| Redirect URI | Enter your callback URLs:  [https://portal.tradecloud1.com/msal-callback/login](https://portal.tradecloud1.com/msal-callback/login) |
 
-During this process, Microsoft generates an Application \(client\) ID; you can find this on the app's Overview screen. Take note of this value.
+After registration, optionally add a second URI for the acceptance test environment:
+
+| Option | Setting |
+| :--- | :--- |
+| Redirect URI | [https://portal.accp.tradecloud1.com/msal-callback/login](https://portal.tradecloud1.com/msal-callback/login) |
+
+During the registration process, Microsoft generates an Application \(client\) ID; you can find this on the app's Overview screen. Take note of this value.
 
 ### Token configuration
 
