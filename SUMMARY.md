@@ -11,7 +11,8 @@
   * [SAP IDoc XML FTP Connector](ftp-connectors/sap-idoc-ftp-connector.md)
   * [CSV FTP Connector](ftp-connectors/csv-ftp-connector.md)
 * [SAP SOAP Connector](sap-soap-connector.md)
-* [Webhook Connector](webhook-connector.md)
+* [Webhook Connector](webhook-connector/README.md)
+  * [Configure the webhook](webhook-connector/configure-the-webhook.md)
 * [WebSockets](websockets.md)
 
 ## Legacy
