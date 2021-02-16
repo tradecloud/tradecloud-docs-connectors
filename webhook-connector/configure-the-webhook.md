@@ -22,11 +22,11 @@ A default set of events will be enabled. The actual set you want to receive wil 
 
 ![](../.gitbook/assets/blue-sailboats-webhook-url.png)
 
-* Select **GET**, **POST** or **PUT** as HTTP method
+* Select **GET**, **POST** or **PUT** as HTTP method.
 * Enter your webhook **URL**. 
-  * **https** is required
-  * use **{orderId}** or **{legacyOrderId}** variables in the URL in case of **GET** method
-* Enter either **Basic authentication** username and password or a static **Bearer token**
+  * **https** is required.
+  * use **{orderId}** or **{legacyOrderId}** variables in the URL in case of **GET** method.
+* Enter either **Basic authentication** username and password or a static **Bearer token.**
 
 {% hint style="warning" %}
 Use **{orderId}** when you use API version 2 on tradecloud1.com  
