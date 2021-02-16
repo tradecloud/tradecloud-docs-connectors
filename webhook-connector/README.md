@@ -163,7 +163,3 @@ A **legacy** **order** will also contain the legacyOrderId, but no version.
 
 {% page-ref page="configure-the-webhook.md" %}
 
-
-
-
-
