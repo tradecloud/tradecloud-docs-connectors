@@ -158,7 +158,7 @@ Order event JSON body
 {% hint style="danger" %}
 There is a known bug TC-6431 "Webhook POST body contains JSON numbers with quotes"   
 Currently webhook body JSON numbers,  have quotes around them \(like "12.34"\) while they should not have them \(12.34\)  
-The bugfix is currently planned and will be released in March  2021
+The bugfix is currently planned to be released in April 2021
 {% endhint %}
 
 ## Next: configure the webhook
