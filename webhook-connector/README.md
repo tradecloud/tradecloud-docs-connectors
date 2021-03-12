@@ -155,8 +155,10 @@ Order event JSON body
 [POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
 {% endhint %}
 
-{% hint style="info" %}
-A **legacy** **order** will also contain the legacyOrderId, but no version.
+{% hint style="danger" %}
+There is a known bug TC-6431 "Webhook POST body contains JSON numbers with quotes"   
+Currently webhook body JSON numbers,  have quotes around them \(like "12.34"\) while they should not have them \(12.34\)  
+The bugfix is currently planned and will be released in March  2021
 {% endhint %}
 
 ## Next: configure the webhook
