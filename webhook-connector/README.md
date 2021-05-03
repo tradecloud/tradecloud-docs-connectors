@@ -36,18 +36,10 @@ GET https://api.accp.tradecloud1.com/order/:orderId
 [API v2 GET order OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
 {% endhint %}
 
-```text
-GET https://test.tradecloud.nl/api/v1/purchaseOrder/:legacyOrderId
-```
-
-{% hint style="info" %}
-[API v1 GET purchaseOrder OpenAPI specification](https://test.tradecloud.nl/api/v1/docs#!/Purchase_order_API/getOrder)
-{% endhint %}
-
 In case of **POST** or **PUT** **webhook** you can use the **order event** inside the request JSON body:
 
 {% hint style="info" %}
-[POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
+[API v2 POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
 {% endhint %}
 
 {% hint style="warning" %}
