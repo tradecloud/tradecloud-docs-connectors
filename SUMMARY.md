@@ -12,6 +12,7 @@
   * [CSV FTP Connector](ftp-connectors/csv-ftp-connector.md)
 * [SAP SOAP Connector](sap-soap-connector.md)
 * [Webhook Connector](webhook-connector/README.md)
+  * [Setting up the webhook](webhook-connector/setting-up-the-webhook.md)
   * [Configure the webhook](webhook-connector/configure-the-webhook.md)
 * [WebSockets](websockets.md)
 
