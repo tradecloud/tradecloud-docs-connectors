@@ -10,7 +10,7 @@ description: This page helps you choosing a connector
 
 If you have an integration platform such as SAP PI/PO, see integration platforms.
 
-         If you already use a standard to integrate such as Edifact or IDocs use:  
+         If you already use a standard to integrate such as Edifact or IDocs use:\
           the Edifact FTP Connector or IDocs FTP Connector
 
 If you have a single instance, use the [SAP Webservice Connector](sap-soap-connector.md)
@@ -50,6 +50,4 @@ Choose one of the connectors, but not the API
 
 
 ### None
-
-
 

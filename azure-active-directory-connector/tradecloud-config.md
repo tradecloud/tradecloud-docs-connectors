@@ -16,7 +16,7 @@ Configuration file for SSO mappings is  `src/app/auth/routes/login/state/sso.con
 
 src/app/auth/routes/login/state/sso.connections.ts example:
 
-```text
+```
 export const azureAppMappings: AzureConnectionMappings = {  
   tradecloud1prod: {
     clientId: 'HIDDEN',
@@ -48,7 +48,7 @@ You can override the global domain configuration and have it specific to a user.
 
 Similar configuration needs to be added to the application.conf in **both** **authentication and user** microservices. Here is a configuration example:
 
-```text
+```
 sso {
    domainMapping = [
      {
@@ -74,4 +74,3 @@ This is a list of SSO mappings corresponding to each AD environment for which we
 path of application.conf in authentication microservice - authentication/src/main/resources/application.conf
 
 path of application.conf in user microservice - user/src/main/resources/application.conf
-
