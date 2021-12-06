@@ -14,14 +14,14 @@ Gmail/GSuite account and access authorization required
 
 You may find these tabs below in the spreadsheet:
 
-| Tab              | Description                                          |
-| ---------------- | ---------------------------------------------------- |
-| Standard         | General rules                                        |
-| Flow             | Incoming and outgoing flows and the folders used.    |
-| Order fields     | Fields specification of the incoming orders          |
-| Order examples   | An example of an incoming order                      |
-| Response fields  | Fields specification of the outgoing order responses |
-| Response example | An example of an outgoing order response             |
+| Tab | Description |
+| :--- | :--- |
+| Standard | General rules |
+| Flow | Incoming and outgoing flows and the folders used. |
+| Order fields | Fields specification of the incoming orders |
+| Order examples | An example of an incoming order |
+| Response fields | Fields specification of the outgoing order responses |
+| Response example | An example of an outgoing order response |
 
 {% hint style="info" %}
 In the outgoing order responses, always provide all mandatory fields.
@@ -31,6 +31,7 @@ An error report may be generated in \outgoing\error\response-yyyyddmm-hhmm.txt
 
 ### Supplier Examples
 
-{% file src="../../.gitbook/assets/Tradecloud-supplier-example-incoming-order.csv" %}
+{% file src="../../.gitbook/assets/tradecloud-supplier-example-incoming-order.csv" %}
 
-{% file src="../../.gitbook/assets/Tradecloud-supplier-example-outgoing-order-response.csv" %}
+{% file src="../../.gitbook/assets/tradecloud-supplier-example-outgoing-order-response.csv" %}
+

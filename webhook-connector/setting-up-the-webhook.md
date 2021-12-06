@@ -6,61 +6,96 @@ description: Setting up the webhook at the customer side
 
 To receive a webhook trigger you will need:
 
-* a **simple web service **reachable from the internet, which listens to some URL
+* a **simple web service** reachable from the internet, which listens to some URL
 * the web service should support **SSL** **only** and you will need a **SSL certificate**
 
 {% hint style="warning" %}
 Self-signed certificates are NOT supported
 {% endhint %}
 
-* the web service should be configured to use** TLS v1.2**
+* the web service should be configured to use **TLS v1.2**
 
 {% hint style="info" %}
 You can test the security level of your certificate at [SSL Labs](https://www.ssllabs.com/ssltest/)
 {% endhint %}
 
 * the web service should support **basic authentication**
-* the HTTP method should be either **GET, POST **or** PUT**
+* the HTTP method should be either **GET, POST** or **PUT**
 
-{% swagger baseUrl="https://yourcompany.com" path="/any/path" method="post" summary="Webhook with event" %}
-{% swagger-description %}
-The POST and PUT webhook method is used to send the order event when the order (response) is new or has been updated.
-{% endswagger-description %}
+{% api-method method="post" host="https://yourcompany.com" path="/any/path" %}
+{% api-method-summary %}
+Webhook with event
+{% endapi-method-summary %}
 
-{% swagger-parameter in="body" name="Body" type="string" %}
+{% api-method-description %}
+The POST and PUT webhook method is used to send the order event when the order \(response\) is new or has been updated.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="Body" type="string" required=false %}
 Order event JSON body
-{% endswagger-parameter %}
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
 
-{% swagger-response status="200" description="" %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
 ```
 
 
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 {% hint style="info" %}
 [POST/PUT webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
 {% endhint %}
 
-{% swagger baseUrl="https://yourcompany.com" path="/any/path/:orderId" method="get" summary="Webhook with id" %}
-{% swagger-description %}
-The GET webhook method is used to send the order id when the order (response) is new or has been updated.
-{% endswagger-description %}
+{% api-method method="get" host="https://yourcompany.com" path="/any/path/:orderId" %}
+{% api-method-summary %}
+Webhook with id
+{% endapi-method-summary %}
 
-{% swagger-parameter in="path" name="orderId" type="string" %}
+{% api-method-description %}
+The GET webhook method is used to send the order id when the order \(response\) is new or has been updated.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="orderId" type="string" required=false %}
 order identifier
-{% endswagger-parameter %}
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
 
-{% swagger-parameter in="query" name="orderId" type="string" %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="orderId" type="string" required=false %}
 order identifier
-{% endswagger-parameter %}
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
 
-{% swagger-response status="200" description="" %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
 ```
+
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 {% hint style="info" %}
 [GET webhook endpoint OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookGet)
@@ -68,7 +103,7 @@ order identifier
 
 ## Next: configure the webhook
 
-{% content-ref url="configure-the-webhook.md" %}
-[configure-the-webhook.md](configure-the-webhook.md)
-{% endcontent-ref %}
+{% page-ref page="configure-the-webhook.md" %}
+
+
 

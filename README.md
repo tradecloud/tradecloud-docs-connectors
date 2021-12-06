@@ -1,5 +1,5 @@
 ---
-description: Overview of connectors, guides and FAQ available.
+description: 'Overview of connectors, guides and FAQ available.'
 ---
 
 # Overview

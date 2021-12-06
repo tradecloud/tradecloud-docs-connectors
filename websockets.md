@@ -21,3 +21,4 @@ Roadmap:
 2. Add basic authentication for easy authentication
 3. Queue orders and responses when the WebSocket client is not connected or subscribed.
 4. Add the STOMP protocal for CONNECT, SUBSCRIBE, ACK, UNSUBSCRIBE and DISCONNECT
+

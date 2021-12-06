@@ -14,6 +14,7 @@
 * [Webhook Connector](webhook-connector/README.md)
   * [Setting up the webhook](webhook-connector/setting-up-the-webhook.md)
   * [Configure the webhook](webhook-connector/configure-the-webhook.md)
+  * [Webhook Events](webhook-connector/webhook-events.md)
 * [WebSockets](websockets.md)
 
 ## Legacy
@@ -24,4 +25,3 @@
   * [CSV Buyer Specification](legacy/cvs-file-connector/csv-buyer-specification.md)
   * [CSV Supplier Specification](legacy/cvs-file-connector/csv-supplier-specification.md)
 * [Exact Globe Connector](legacy/exact-globe-connector.md)
-

@@ -6,7 +6,7 @@ description: >-
 
 # CSV File Connector Requirements
 
-## Buyer account number (supplier only)
+## Buyer account number \(supplier only\)
 
 If you are a supplier, Tradecloud needs to know the **account number of your customer.**
 
@@ -22,7 +22,7 @@ These environments are isolated by **two separate installed connectors** with **
 
 ## Windows Server
 
-The .NET connector needs a **(shared) Windows Server** where it will be installed as a **Windows Service**.
+The .NET connector needs a **\(shared\) Windows Server** where it will be installed as a **Windows Service**.
 
 * Processor: **X64** architecture, it will use max. 10% of 1 processor core
 * Memory: max. 100 MB
@@ -59,3 +59,4 @@ The .NET connector needs a **Windows user account**
 
 * with **read and write rights** on each **own installation folder** and sub folders
 * with **read and write rights** on the **CVS root folder** or share and its sub folders
+
