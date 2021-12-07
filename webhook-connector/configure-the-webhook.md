@@ -16,6 +16,12 @@ As a company admin configure the webhook in your company settings on the [Tradec
 * Select **Settings** in the page menu.
 * Select **Webhook** in the Integration section.
 
+{% hint style="info" %}
+The shipment webhook has a similar configuration section called "Shipments Webhook Integration".
+
+The shipment webhook configuration will be moved into the integration section in the future.
+{% endhint %}
+
 ### Select events to receive
 
 A default set of events will be enabled. The actual set you want to receive wil be dependent on the capabilities of your integration and ERP system. You can find a list of events here:
