@@ -4,9 +4,9 @@ description: Webhook Events overview.
 
 # Webhook Events
 
-## Order Process Events <a href="#order-issued-and-updated-by-buyer" id="order-issued-and-updated-by-buyer"></a>
+## Order Process Events
 
-### Order issued and updated by buyer <a href="#order-issued-and-updated-by-buyer" id="order-issued-and-updated-by-buyer"></a>
+### Order issued and updated by buyer
 
 The buyer can issue new order lines or update existing issued lines.
 
