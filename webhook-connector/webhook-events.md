@@ -137,8 +137,11 @@ Please note these events are not published when documents are embedded in the or
 
 ## Shipment Events
 
-The supplier can send a despatch advice which will trigger a `ShipmentDespatchedBySupplier` event
+The supplier can send a despatch advice which will trigger a `ShipmentDespatchedBySupplier` event.
+
+The buyer can resend a shipment to their ERP which will trigger a `ShipmentResentByBuyer` event.
 
 | ShipmentEvent                  | Webhook Configuration |
 | ------------------------------ | --------------------- |
 | `ShipmentDespatchedBySupplier` | n/a                   |
+| `ShipmentResentByBuyer`        | n/a                   |
