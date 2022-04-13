@@ -25,7 +25,7 @@ See [the API manual](https://tradecloud.gitbook.io/api/api/webhook-vs-polling) a
 {% hint style="warning" %}
 When you **use the order event** it will **ONLY** contain the lines **affected** by the event.
 
-When you **use the shipment event** it will contain **ALL** the lines and **ALL** the dcouments. You can filter new/changed lines and documents based on the `lastChangedAt` fields.
+When you **use the shipment event** it will contain **ALL** the lines and **ALL** the documents. You can filter new/changed lines and documents based on the `lastChangedAt` fields.
 
 When you **GET the order or shipment yourself** you will get **ALL** the lines. In case of shipments you can filter new/changed lines and documents based on the `lastChangedAt` fields.
 {% endhint %}
