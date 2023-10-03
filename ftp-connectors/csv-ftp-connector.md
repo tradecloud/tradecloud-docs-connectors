@@ -4,7 +4,7 @@ description: Custom CSV (RFC 4180) files over FTPS / SFTP server at Tradecloud s
 
 # CSV FTP Connector
 
-Use a custom CSV FTP connector in case you want to exchange new and changed orders and order responses using any custom CSV format and SFTP transport.
+Use a custom CSV FTP connector in case you want to exchange orders, order responses, despatch or receipt advices using any custom CSV format and SFTP transport.
 
 |  |  |
 | :--- | :--- |

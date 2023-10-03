@@ -4,7 +4,7 @@ description: UN/EDIFACT D.96A files over FTPS / SFTP server at Tradecloud side
 
 # Edifact FTP Connector
 
-Use the Edifact FTP connector in case you want to exchange new and changed orders and order responses with Tradecloud using the UN/EDIFACT D.96A format and SFTP transport.
+Use the Edifact FTP connector in case you want to exchange orders, order responses, despatch or receipt advices with Tradecloud using the UN/EDIFACT D.96A format and SFTP transport.
 
 |  |  |
 | :--- | :--- |
