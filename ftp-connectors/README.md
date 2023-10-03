@@ -6,11 +6,8 @@ description: 'Edifact, IDoc and CSV files over FTP server at Tradecloud side'
 
 Tradecloud provides several FTP based connectors:
 
-* [Edifact FTP Connector](edifact-ftp-connector.md)
-* [SAP IDoc XML FTP Connector](sap-idoc-ftp-connector.md)
 * [CVS FTP Connector](csv-ftp-connector.md)
-
-Your data format and transport can be set in your company integration settings by your company admin
+* [Edifact FTP Connector](edifact-ftp-connector.md)
 
 ## FTP Configuration
 
@@ -23,30 +20,51 @@ Your data format and transport can be set in your company integration settings b
 
 ### Protocol
 
-| Protocol | Description | Port |
-| :--- | :--- | :--- |
-| FTPS | Explicit FTP over TLS | 21 |
-| SFTP | SSH File Transfer Protocol  | 22 |
-| FTP w/o encryption | &lt;not supported&gt; |  |
+| Protocol | Description | Supported | Port |
+| :--- | :--- | :--- | :--- |
+| SFTP | SSH File Transfer Protocol  | Yes | 22 |
+| FTPS | Explicit FTP over TLS | No | |
+| FTP  | w/o encryption | No | |
 
 ### Username / password
 
-Username and password can be set in your company integration settings by your company admin
+Username and password can be set by Tradecloud support.
+
+## Folder structure
+
+One folder structure per customer:
+```
+/order
+/order_change
+/order_response 
+/despatch_advice
+/receipt_advice
+/archive/order
+        /order_change
+        /order_response 
+        /despatch_advice
+        /receipt_advice
+```
 
 ## FTP Flows
 
 ### Uploading a file to Tradecloud
 
+{% hint style="warning" %}
+Both parties should use `0664` permission, when uploading files.
+Setting the correct permissions is the responsibility of the client as outlined in the [standard](https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13#section-7.6).
+{% endhint %}
+
 ![](../.gitbook/assets/20180218-ftp-upload-flow-by-customer.png)
 
 | Party | Step | Folder | Description |
 | :--- | :--- | :--- | :--- |
-| Tradecloud | Periodic polling | order\_response | Periodically poll the folder for a new file |
-| Customer | 1. Export file |  | Customer  exports a new file |
-| Customer | 2. Upload file | order\_response | Customer uploads a new file |
-| Tradecloud | 3. Download file | order\_response | Tradecloud downloads a new file |
-| Tradecloud | 4. Import file |  | Tradecloud imports the file |
-| Tradecloud | 5. Archive file. | archive/order\_response | When successfully imported,  move the file to archive |
+| Tradecloud | Periodic polling |Periodically poll the folder for a new file |
+| Customer | 1. Export file | Customer  exports a new file |
+| Customer | 2. Upload file | Customer uploads a new file |
+| Tradecloud | 3. Download file | Tradecloud downloads a new file |
+| Tradecloud | 4. Import file | Tradecloud imports the file |
+| Tradecloud | 5. Archive file. | When successfully imported,  move the file to the archive folder |
 
 ### Downloading a file from Tradecloud
 
@@ -59,9 +77,4 @@ Username and password can be set in your company integration settings by your co
 | Tradecloud | 2. Upload file | order | Tradecloud uploads a new file |
 | Customer | 3. Download file | order | Customer downloads a new file |
 | Customer | 4. Process file |  | Customers ERP system imports the file |
-| Customer | 5. Archive file | archive/order | When successfully imported,  move the file to archive |
-
-
-
-
-
+| Customer | 5. Archive file | archive/order | When successfully imported,  move the file to the archive folder |

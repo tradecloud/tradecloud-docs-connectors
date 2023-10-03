@@ -1,15 +1,13 @@
 # Table of contents
 
 * [Overview](README.md)
-* [How to choose a Connector](how-to-choose-a-connector.md)
 * [API v2](api-v2.md)
 * [Azure Active Directory Connector](azure-active-directory-connector/README.md)
   * [Azure AD Connector - AD Configuration](azure-active-directory-connector/ad-config.md)
   * [Azure AD Connector - Tradecloud Configuration](azure-active-directory-connector/tradecloud-config.md)
 * [FTP Connectors](ftp-connectors/README.md)
-  * [Edifact FTP Connector](ftp-connectors/edifact-ftp-connector.md)
-  * [SAP IDoc XML FTP Connector](ftp-connectors/sap-idoc-ftp-connector.md)
   * [CSV FTP Connector](ftp-connectors/csv-ftp-connector.md)
+  * [Edifact FTP Connector](ftp-connectors/edifact-ftp-connector.md)
 * [SAP SOAP Connector](sap-soap-connector.md)
 * [Webhook Connector](webhook-connector/README.md)
   * [Setting up the webhook](webhook-connector/setting-up-the-webhook.md)
