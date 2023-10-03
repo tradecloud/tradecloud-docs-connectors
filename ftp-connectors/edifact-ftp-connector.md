@@ -1,5 +1,5 @@
 ---
-description: UN/EDIFACT D.96A files over FTPS / SFTP server at Tradecloud side
+description: UN/EDIFACT D.96A files over a SFTP server at Tradecloud side
 ---
 
 # Edifact FTP Connector

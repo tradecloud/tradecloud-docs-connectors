@@ -1,5 +1,5 @@
 ---
-description: Custom CSV (RFC 4180) files over FTPS / SFTP server at Tradecloud side
+description: Custom CSV (RFC 4180) files over a SFTP server at Tradecloud side
 ---
 
 # CSV FTP Connector
