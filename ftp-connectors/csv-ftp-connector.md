@@ -1,17 +1,18 @@
 ---
-description: CSV (RFC 4180) files over FTPS / SFTP server at Tradecloud side
+description: Custom CSV (RFC 4180) files over a SFTP server at Tradecloud side
 ---
 
 # CSV FTP Connector
 
-Use the CSV FTP connector in case you want to exchange new and changed orders and order responses  using the Tradecloud proprietary CSV format and FTP transport.
+Use a custom CSV FTP connector in case you want to exchange orders, order responses, despatch or receipt advices using any custom CSV format and SFTP transport.
 
 |  |  |
 | :--- | :--- |
 | Data Format | [RFC 4180](https://tools.ietf.org/html/rfc4180) |
-| Message types | Order \(new and changed\), Order response \(new and changed\) |
-| Specification | Not available yet |
-| Transport | SFTP and FTPS server at Tradecloud side |
-| Requirements | SFTP or FTPS client at your side, outbound internet access. |
-| Availability | Not available yet \(use the [CSV file connector](https://docs.tradecloud1.com/connectors/cvs-file-connector) in the meanwhile\) |
+| Message types | Order, Order update, Order Response, Despatch Advice, Receipt Advice |
+| Specification | Custom made |
+| Transport | [SSH File Transfer Protocol](https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13) |
+| Host | SFTP server at Tradecloud side |
+| Requirements | SFTP client at your side, outbound internet access. |
+| Availability | Available via partner Supplydrive |
 
