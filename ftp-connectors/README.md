@@ -55,7 +55,7 @@ Both parties must use `0664` permission when uploading files.
 Setting the correct permissions is the responsibility of the client as outlined in the [standard](https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13#section-7.6).
 {% endhint %}
 
-![](../.gitbook/assets/20180218-ftp-upload-flow-by-customer.png)
+![](../.gitbook/assets/ftp-upload-flow-by-customer.png)
 
 | Party | Step | Description |
 | :--- | :--- | :--- |
@@ -68,7 +68,7 @@ Setting the correct permissions is the responsibility of the client as outlined 
 
 ### Downloading a file from Tradecloud
 
-![](../.gitbook/assets/20180218-ftp-download-flow-by-customer.png)
+![](../.gitbook/assets/ftp-download-flow-by-customer.png)
 
 | Party | Step | Description |
 | :--- | :--- | :--- |
