@@ -59,7 +59,7 @@ Setting the correct permissions is the responsibility of the client as outlined 
 
 | Party | Step | Description |
 | :--- | :--- | :--- |
-| Tradecloud | Periodic polling |Periodically poll the folder for a new file |
+| Tradecloud | Periodic polling | Periodically poll the folder for a new file |
 | Customer | 1. Export file | Customer  exports a new file |
 | Customer | 2. Upload file | Customer uploads a new file |
 | Tradecloud | 3. Download file | Tradecloud downloads a new file |
