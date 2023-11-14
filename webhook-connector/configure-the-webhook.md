@@ -4,50 +4,67 @@ description: Configurate the webhook in the Tradecloud portal
 
 # Configure the webhook
 
-## Configure your webhook in the Tradecloud1 portal
+## Configure your webhooks in the Tradecloud1 portal
 
-### Select Webhook
+### Select one or more webhooks
 
-As a company admin configure the webhook in your company settings on the [Tradecloud1 platform](http://portal.tradecloud1.com):
+As a company admin configure one or more webhooks in your company settings on the [Tradecloud1 platform](http://portal.tradecloud1.com):
 
-![](../.gitbook/assets/blue-sailboats-webhook.png)
+![Webhook Settings](../.gitbook/assets/webhook-settings.png)
 
 * Select **My team** in the menu below your avatar.
 * Select **Settings** in the page menu.
-* Select **Webhook** in the Integration section.
+* Configure one or more **Webhook Integration**s below.
 
-{% hint style="info" %}
-The shipment webhook has a similar configuration section called "Shipments Webhook Integration".
+### Orders Webhook Integration
 
-The shipment webhook configuration will be moved into the integration section in the future.
-{% endhint %}
+Enable the **Order Webhook Integration** if you want to receive a webhook trigger when an order has been issued or changed:
 
-### Select events to receive
+![Order Events](../.gitbook/assets/webhook-order-events.png)
 
-A default set of events will be enabled. The actual set you want to receive wil be dependent on the capabilities of your integration and ERP system. You can find a list of events here:
+A default set of order events will be enabled. The actual set you want to select wil be dependent on the capabilities of your integration and ERP system. You can find a list of events here:
 
-{% content-ref url="webhook-events.md" %}
-[webhook-events.md](webhook-events.md)
-{% endcontent-ref %}
+{% page-ref page="order-events.md" %}
 
-![](../.gitbook/assets/blue-sailboats-webhook-events.png)
+![Order Delivery Schedule](../.gitbook/assets/webhook-order-delivery-schedule.png)
+
+In case of the order webhook you can choose between 
+- Multiple delivery lines per order line, also known as the **native** delivery schedule
+- Only on delivery line per order line, also known as the **simple**  delivery schedule
+
+See [the API manual](https://docs.tradecloud1.com/api/introduction/api/delivery-schedule) to read about the native versus the simple delivery schedule.
+
+### Order Documents Webhook Integration
+
+Enable the **Order Documents Webhook Integration** if you want to receive a webhook trigger when an order document has been attached:
+
+![Order Documents Events](../.gitbook/assets/webhook-order-documents-events.png)
+
+A default set of order document events will be enabled. The actual set you want to select wil be dependent on the capabilities of your integration and ERP system. You can find a list of events here:
+
+{% page-ref page="order-documents-events.md" %}
+
+### Shipments Webhook Integration
+
+Enable the **Order Webhook Integration** if you want to receive a webhook trigger when a shipment has been issued or changed:
+
+![Shipment Events](../.gitbook/assets/webhook-shipment-events.png)
+
+A default set of shipments events will be enabled. The actual set you want to select wil be dependent on the capabilities of your integration and ERP system. You can find a list of events here:
+
+{% page-ref page="shipment-events.md" %}
 
 ### Configure method, url and credentials
 
-![](../.gitbook/assets/blue-sailboats-webhook-url.png)
+![Order Webhook Congfig](../.gitbook/assets/webhook-order-config.png)
 
-* Select **GET**, **POST** or **PUT** as HTTP method.
-* Enter your webhook **URL**.&#x20;
+* Select **GET** or **POST** as HTTP method.
+* Enter your webhook **URL**
   * **https** is required.
-  * use **{orderId}** or **{legacyOrderId}** variables in the URL in case of **GET** method.
+  * use the **{orderId}** variable in the URL in case of **GET** method.
 * Enter either **Basic authentication** username and password or a static **Bearer token.**
 
-{% hint style="warning" %}
-Use **{orderId}** when you use API version 2 on tradecloud1.com\
-Use **{legacyOrderId}** when you use API version 1 on tradecloud.nl
-{% endhint %}
-
 {% hint style="info" %}
-You can test webhook triggers using [webhook.site](https://webhook.site)\
+You can test webhook triggers using [webhook.site](https://webhook.site)
 Use bogus username and password.
 {% endhint %}

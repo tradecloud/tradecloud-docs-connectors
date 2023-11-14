@@ -18,12 +18,14 @@ You can either choose between the **POST** or **GET** webhook:
 - **POST** which will contain the **order event** or **shipment event** in a JSON body.
 - **GET** which will contain the **order ID** or **shipment ID** as path or query parameter.
 
-See [the API manual](https://docs.tradecloud1.com/api/introduction/api/webhook-vs-polling) about pro's and cons of either choice.
+See [the API manual](https://docs.tradecloud1.com/api/introduction/api/webhook-vs-polling) to read about pro's and cons of either choice.
 {% endhint %}
 
 ### Using the POST webhook
 
-In case of a **POST** webhook you can use the **event** inside the request JSON body:
+In case of a **POST** webhook you can use the **event** inside the request JSON body.
+
+Your POST webhook must implement the POST order & shipment webhook OpenAPI specifications:
 
 {% hint style="info" %}
 [POST order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost)
@@ -60,6 +62,8 @@ When using the **GET webhook**, you must fetch the actual order or shipment from
 GET https://api.accp.tradecloud1.com/order/:orderId
 GET https://api.accp.tradecloud1.com/shipment/:shipmentId
 ```
+
+Your GET webhook must implement the GET order & shipment OpenAPI specifications:
 
 {% hint style="info" %}
 [GET order OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)  

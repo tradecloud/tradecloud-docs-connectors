@@ -26,20 +26,20 @@ You can test the security level of your certificate at [SSL Labs](https://www.ss
 
 ## Setting up the POST webhook
 
-Your POST webhook must implement the POST order & shipment OpenAPI specifications: 
+Your POST webhook must implement the POST order & shipment webhook OpenAPI specifications: 
 
 {% hint style="info" %}
-[POST order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
+[POST order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-webhook/specs.yaml#/order-webhook%20endpoints/webhookPost)
 
 [POST shipment webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost)
 {% endhint %}
 
 ## Setting up the GET webhook
 
-Your GET webhook must implement the GET order & shipment OpenAPI specifications: 
+Your GET webhook must implement the GET order & shipment webhook OpenAPI specifications: 
 
 {% hint style="info" %}
-[GET order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookGet)
+[GET order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-webhook/specs.yaml#/order-webhook%20endpoints/webhookGet)
 
 [GET shipment webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookGet)
 {% endhint %}
