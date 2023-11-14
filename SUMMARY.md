@@ -12,7 +12,9 @@
 * [Webhook Connector](webhook-connector/README.md)
   * [Setting up the webhook](webhook-connector/setting-up-the-webhook.md)
   * [Configure the webhook](webhook-connector/configure-the-webhook.md)
-  * [Webhook Events](webhook-connector/webhook-events.md)
+  * [Order Events](webhook-connector/order-events.md)
+  * [Order Documents Events](webhook-connector/order-documents-events.md)
+  * [Shipment Events](webhook-connector/shipment-events.md)
 * [WebSockets](websockets.md)
 
 ## Legacy

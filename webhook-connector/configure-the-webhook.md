@@ -12,8 +12,8 @@ As a company admin configure one or more webhooks in your company settings on th
 
 ![Webhook Settings](../.gitbook/assets/webhook-settings.png)
 
-* Select **My team** in the menu below your avatar.
-* Select **Settings** in the page menu.
+* Select **My company** in the menu below your avatar.
+* The **Settings** tab in the Company menu should be selected.
 * Configure one or more **Webhook Integration**s below.
 
 ### Orders Webhook Integration
@@ -63,8 +63,9 @@ A default set of shipments events will be enabled. The actual set you want to se
   * **https** is required.
   * use the **{orderId}** variable in the URL in case of **GET** method.
 * Enter either **Basic authentication** username and password or a static **Bearer token.**
+* Save the settings
 
 {% hint style="info" %}
 You can test webhook triggers using [webhook.site](https://webhook.site)
-Use bogus username and password.
+Int that case, use a bogus username and password.
 {% endhint %}
