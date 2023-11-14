@@ -46,7 +46,7 @@ When using the `orderDocumentsEvent` field, you must [download the document](htt
 
 ## Setting up the POST shipment webhook
 
-Your POST **shipment** webhook must implement the POST shipmentorder webhook OpenAPI specifications: 
+Your POST **shipment** webhook must implement the POST shipment webhook OpenAPI specifications: 
 
 {% hint style="info" %}
 [POST shipment webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost)
@@ -71,6 +71,11 @@ You must also implement the GET order OpenAPI specification to fetch the actual 
 [GET order OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
 {% endhint %}
 
+{% hint style="warning" %}
+When you **GET the order** you will get **ALL** the lines. 
+You can filter new/changed order lines based on the `lastChangedAt` fields.
+{% endhint %}
+
 ## Setting up the GET shipment webhook
 
 Your GET shipment webhook must implement the GET order webhook OpenAPI specification: 
@@ -80,13 +85,15 @@ Your GET shipment webhook must implement the GET order webhook OpenAPI specifica
 {% endhint %}
 
 {% hint style="warning" %}
-When you **GET the order or shipment** you will get **ALL** the lines. 
-You can filter new/changed lines and documents based on the `lastChangedAt` fields.
+When you **GET the shipment** you will get **ALL** the lines. 
+You can filter new/changed shipment lines and documents based on the `lastChangedAt` fields.
 {% endhint %}
 
 You must also implement the GET shipment OpenAPI specification to fetch the actual order: 
 
+{% hint style="info" %}
 [GET shipment OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/getShipmentByIdRoute)
+{% endhint %}
 
 ## Next: configure the webhook
 

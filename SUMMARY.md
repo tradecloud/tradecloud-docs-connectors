@@ -15,7 +15,6 @@
   * [Order Events](webhook-connector/order-events.md)
   * [Order Documents Events](webhook-connector/order-documents-events.md)
   * [Shipment Events](webhook-connector/shipment-events.md)
-* [WebSockets](websockets.md)
 
 ## Legacy
 
