@@ -29,8 +29,8 @@ A default set of order events will be enabled. The actual set you want to select
 ![Order Delivery Schedule](../.gitbook/assets/webhook-order-delivery-schedule.png)
 
 In case of the order webhook you can choose between 
-- Multiple delivery lines per order line, also known as the **native** delivery schedule
-- Only on delivery line per order line, also known as the **simple**  delivery schedule
+* Multiple delivery lines per order line, also known as the **native** delivery schedule.
+* Only on delivery line per order line, also known as the **simple**  delivery schedule.
 
 See [the API manual](https://docs.tradecloud1.com/api/introduction/api/delivery-schedule) to read about the native versus the simple delivery schedule.
 

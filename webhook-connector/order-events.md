@@ -6,7 +6,7 @@ description: Order Events overview.
 
 When using the order webhook you may configure and receive below order events.
 
-### Order is issued or updated by buyer
+## Order is issued or updated by buyer
 
 The buyer can issue new order lines or update existing issued lines.
 
@@ -19,14 +19,14 @@ If confirmed delivery schedule or prices are updated, this will become a reopen 
 | `OrderLinesReissuedByBuyer` | Updated order lines are reissued by the buyer |
 | `OrderLinesUpdatedByBuyer`  | Order and line fields other than prices & delivery schedules are updated by the buyer |
 
-### Order confirmed by supplier or buyer
+## Order confirmed by supplier or buyer
 
 The supplier can either accept, reject or propose an alternative (see next section).
 
-- Accepted means that the supplier confirmed the order line(s) as requested by the buyer.
-- Rejecting means that the supplier cannot deliver the order line(s) at all.
-- Confirmed by supplier happens when the supplier confirms and [Auto Confirm](https://docs.tradecloud1.com/api/processes/order/buyer/issue/indicators#auto-confirm) has been enabled by the buyer.
-- Confirmed by buyer is used when the buyer migrates already confirmed order lines to Tradecloud.
+* Accepted means that the supplier confirmed the order line(s) as requested by the buyer.
+* Rejecting means that the supplier cannot deliver the order line(s) at all.
+* Confirmed by supplier happens when the supplier confirms and [Auto Confirm](https://docs.tradecloud1.com/api/processes/order/buyer/issue/indicators#auto-confirm) has been enabled by the buyer.
+* Confirmed by buyer is used when the buyer migrates already confirmed order lines to Tradecloud.
 
 | OrderEvent                      | Webhook Configuration                     |
 | ------------------------------- | ----------------------------------------- |
@@ -36,7 +36,7 @@ The supplier can either accept, reject or propose an alternative (see next secti
 | `OrderLinesConfirmedByBuyer`    | Order lines are confirmed by the buyer    |
 
 
-### Order proposal by supplier
+## Order proposal by supplier
 
 The supplier can propose an alternative delivery schedule or prices.
 
@@ -48,7 +48,7 @@ The buyer either approves or rejects the proposal.
 | `OrderChangesProposalApprovedByBuyer` | By supplier proposed order changes are approved by the buyer |
 | `OrderChangesProposalRejectedByBuyer` | By supplier proposed order changes are rejected by the buyer |
 
-### Order updated by supplier
+## Order updated by supplier
 
 The supplier can update existing order lines.
 
@@ -59,7 +59,7 @@ If delivery schedule or prices are updated this will become either a proposal or
 | `OrderLinesUpdatedBySupplier`  | Order and line fields other than prices & delivery schedules are updated by the supplier |
 | `OrderLinesItemDetailsChanged` | Order lines item details are changed by the supplier | 
 
-### Order reopen request by buyer
+## Order reopen request by buyer
 
 The buyer can request to reopen confirmed order lines.
 
@@ -71,7 +71,7 @@ The supplier can either approve or reject the reopen request.
 | `OrderLinesReopenRequestApprovedBySupplier` | Buyer reopen request is approved by supplier |
 | `OrderLinesReopenRequestRejectedBySupplier` | Buyer reopen request is rejected by supplier |
 
-### Order reopen request by supplier
+## Order reopen request by supplier
 
 The supplier can request to reopen confirmed order lines.
 
@@ -83,7 +83,7 @@ The buyer can either approve or reject the reopen request.
 | `OrderLinesReopenRequestApprovedByBuyer` | Supplier reopen request is approved by buyer |
 | `OrderLinesReopenRequestRejectedByBuyer` | Supplier reopen request is rejected by buyer |
 
-### Order lines cancelled by buyer
+## Order lines cancelled by buyer
 
 The buyer can cancel order lines without request.
 
@@ -91,7 +91,7 @@ The buyer can cancel order lines without request.
 | ---------------------------- | -------------------------------------- |
 | `OrderLinesCancelledByBuyer` | Order lines are cancelled by the buyer |
 
-### Order lines completed by buyer
+## Order lines completed by buyer
 
 The buyer can complete and revert completion of order lines.
 
@@ -100,7 +100,7 @@ The buyer can complete and revert completion of order lines.
 | `OrderLinesCompletedByBuyer`         | Order lines are completed by the buyer          |
 | `CompletedOrderLinesRevertedByBuyer` | Completed order lines are reverted by the buyer |
 
-### Order lines logistics
+## Order lines logistics
 
 Both buyer and supplier can update delivery schedule logistics fields `status`, `etd` and `eta`
 
@@ -109,7 +109,7 @@ Both buyer and supplier can update delivery schedule logistics fields `status`, 
 | `OrderLinesDeliveryScheduleLogisticsUpdatedByBuyer`    | Delivery schedule logistics fields are updated by the buyer    |
 | `OrderLinesDeliveryScheduleLogisticsUpdatedBySupplier` | Delivery schedule logistics fields are updated by the supplier |
 
-### Order contacts
+## Order contacts
 
 Both buyer and supplier can update their order contact.
 
@@ -118,7 +118,7 @@ Both buyer and supplier can update their order contact.
 | `OrderContactReassignedByBuyer`    | Buyer order contacts are reassigned in the portal    |
 | `OrderContactReassignedBySupplier` | Supplier order contacts are reassigned in the portal |
 
-### Maintenance
+## Maintenance
 
 Buyer and supplier can resend order lines to their ERP system.
 
