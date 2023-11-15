@@ -87,7 +87,7 @@ When you **GET the shipment** you will get **ALL** the lines.
 You can filter new/changed shipment lines and documents based on the `lastChangedAt` fields.
 {% endhint %}
 
-You must also implement the GET shipment OpenAPI specification to fetch the actual order: 
+You must also implement the GET shipment OpenAPI specification to fetch the actual shipment: 
 
 {% hint style="info" %}
 [GET shipment OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/getShipmentByIdRoute)
