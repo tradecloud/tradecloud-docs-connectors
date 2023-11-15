@@ -30,7 +30,7 @@ A default set of order events will be enabled. The actual set you want to select
 
 In case of the order webhook you can choose between 
 * Multiple delivery lines per order line, also known as the **native** delivery schedule.
-* Only on delivery line per order line, also known as the **simple**  delivery schedule.
+* Only one delivery line per order line, also known as the **simple**  delivery schedule.
 
 See [the API manual](https://docs.tradecloud1.com/api/introduction/api/delivery-schedule) to read about the native versus the simple delivery schedule.
 
@@ -61,11 +61,12 @@ A default set of shipments events will be enabled. The actual set you want to se
 * Select **GET** or **POST** as HTTP method.
 * Enter your webhook **URL**
   * **https** is required.
-  * use the **{orderId}** variable in the URL in case of **GET** method.
+  * use the **{orderId}** or **{shipmentId}** variable in the URL in case of **GET** method.
 * Enter either **Basic authentication** username and password or a static **Bearer token.**
 * Save the settings
 
 {% hint style="info" %}
 You can test webhook triggers using [webhook.site](https://webhook.site)
-Int that case, use a bogus username and password.
+
+Use a bogus username and password.
 {% endhint %}

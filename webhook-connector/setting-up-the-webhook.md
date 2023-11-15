@@ -6,23 +6,21 @@ description: Setting up the webhook at the customer side
 
 To receive a webhook trigger you will need:
 
-* a **simple web service** reachable from the internet, which listens to some URL
-* the web service should support **SSL** **only** and you will need a **SSL certificate**
+* A **simple web service** reachable from the internet, which listens to some URL.
+* The web service should support **SSL** **only** and you will need a **SSL certificate**.
 
 {% hint style="warning" %}
-Self-signed certificates are NOT supported
-{% endhint %}
+The web service should be configured to use **TLS v1.2** or **TLS v1.3**. 
 
-{% hint style="warning" %}
-The web service should be configured to use **TLS v1.2** or **TLS v1.3**
+Self-signed certificates are NOT supported.
 {% endhint %}
 
 {% hint style="info" %}
 You can test the security level of your certificate at [SSL Labs](https://www.ssllabs.com/ssltest/)
 {% endhint %}
 
-* the web service should support **basic authentication** or a **static bearer token**
-* the HTTP method should be either **POST** or **GET**
+* The web service should support **basic authentication** or a **static bearer token**.
+* The HTTP method should be either **POST** or **GET**.
 
 ## Setting up the POST order webhook
 
@@ -42,7 +40,7 @@ See [the API manual](https://docs.tradecloud1.com/api/introduction/api/delivery-
 When using the **order event** it will **ONLY** contain the order lines **affected** by the event.
 {% endhint %}
 
-When using the `orderDocumentsEvent` field, you must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event.
+When using the `orderDocumentsEvent` field, you must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
 
 ## Setting up the POST shipment webhook
 

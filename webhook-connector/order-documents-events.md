@@ -4,13 +4,7 @@ description: Order Documents Events overview.
 
 # Order Documents Events
 
----
-description: Order Documents Events overview.
----
-
-# Order Documents Events
-
-The buyer and supplier can attach documents to the order.
+The buyer and supplier can attach documents to the order or line.
 
 | OrderDocumentEvent                 | Webhook Configuration                                         |
 | ---------------------------------- | ------------------------------------------------------------- |

@@ -27,11 +27,11 @@ In case of a **POST** webhook you can use the **event** inside the request JSON 
 
 #### Step 2. Your webhook service downloads the actual document from Tradecloud
 
-When using the **order documents event** in the request JSON body, you must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event.
+When using the **order documents event** in the request JSON body, you must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
 
 ### Using the GET webhook
 
-In case of a **GET** webhook, the triggered webhook URL contains an order id parameter, for example:
+In case of a **GET** webhook, the triggered webhook URL contains an **order ID** or **shipment ID** parameter, for example:
 
 ```text
 GET https://yourcompany.com/any/order/path/:orderId

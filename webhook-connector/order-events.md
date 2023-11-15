@@ -24,16 +24,14 @@ If confirmed delivery schedule or prices are updated, this will become a reopen 
 The supplier can either accept, reject or propose an alternative (see next section).
 
 * Accepted means that the supplier confirmed the order line(s) as requested by the buyer.
-* Rejecting means that the supplier cannot deliver the order line(s) at all.
-* Confirmed by supplier happens when the supplier confirms and [Auto Confirm](https://docs.tradecloud1.com/api/processes/order/buyer/issue/indicators#auto-confirm) has been enabled by the buyer.
-* Confirmed by buyer is used when the buyer migrates already confirmed order lines to Tradecloud.
+* Rejected means that the supplier cannot deliver the order line(s) at all.
+* Confirmed means that the supplier confirmed the order line(s) with other values as requested by the buyer and [Auto Confirm](https://docs.tradecloud1.com/api/processes/order/buyer/issue/indicators#auto-confirm) has been enabled by the buyer.
 
 | OrderEvent                      | Webhook Configuration                     |
 | ------------------------------- | ----------------------------------------- |
 | `OrderLinesAcceptedBySupplier`  | Order lines are accepted by the supplier  |
 | `OrderLinesRejectedBySupplier`  | Order lines are rejected by the supplier  |
-| `OrderLinesConfirmedBySupplier` | Order lines are confirmed by the supplier |
-| `OrderLinesConfirmedByBuyer`    | Order lines are confirmed by the buyer    |
+| `OrderLinesConfirmedBySupplier` | Order lines are confirmed by the supplier with other values as requested by the buyer |
 
 
 ## Order proposal by supplier
@@ -111,7 +109,7 @@ Both buyer and supplier can update delivery schedule logistics fields `status`, 
 
 ## Order contacts
 
-Both buyer and supplier can update their order contact.
+Both buyer and supplier can reassign their order contact.
 
 | OrderEvent                         | Webhook Configuration                                |
 | ---------------------------------- | ---------------------------------------------------- |
