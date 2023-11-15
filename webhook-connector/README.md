@@ -23,7 +23,7 @@ See [the API manual](https://docs.tradecloud1.com/api/introduction/api/webhook-v
 
 ### Using the POST webhook
 
-In case of a **POST** webhook you can use the **event** inside the request JSON body.
+In case of a **POST** webhook you can use the order data of the **event** inside the request body.
 
 #### Step 2. Your webhook service downloads the actual document from Tradecloud
 
