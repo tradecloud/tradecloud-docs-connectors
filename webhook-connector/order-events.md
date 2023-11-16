@@ -120,7 +120,7 @@ Both buyer and supplier can reassign their order contact.
 
 Buyer and supplier can resend order lines to their ERP system.
 
-Order lines can be synced from the tradecloud.nl to the the Tradecloud One platform.
+Order lines can be synced from the tradecloud legacy platform to the the Tradecloud One platform.
 
 | OrderEvent              | Webhook Configuration                        |
 | ----------------------- | -------------------------------------------- |
