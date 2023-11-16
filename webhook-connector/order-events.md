@@ -83,7 +83,7 @@ The buyer can either approve or reject the reopen request.
 
 ## Order lines cancelled by buyer
 
-The buyer can cancel order lines without request.
+The buyer can cancel order lines that don't contain a request.
 
 | OrderEvent                   | Webhook Configuration                  |
 | ---------------------------- | -------------------------------------- |
