@@ -52,7 +52,7 @@ Your POST **shipment** webhook must implement the POST shipment webhook OpenAPI 
 
 {% hint style="warning" %}
 When you **use the shipment event** it will contain **ALL** the lines and **ALL** the documents. 
-You can filter new/changed lines and documents based on the `lastChangedAt` fields.
+You can filter new/changed lines and documents based on the `lastUpdatedAt` fields.
 {% endhint %}
 
 ## Setting up the GET order webhook
