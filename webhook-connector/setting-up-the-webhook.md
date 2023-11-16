@@ -71,7 +71,7 @@ You must also implement the GET order OpenAPI specification to fetch the actual 
 
 {% hint style="warning" %}
 When you **GET the order** you will get **ALL** the lines. 
-You can filter new/changed order lines based on the `lastChangedAt` fields.
+You can filter new/changed order lines based on the `lastUpdatedAt` fields.
 {% endhint %}
 
 ## Setting up the GET shipment webhook
