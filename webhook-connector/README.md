@@ -8,63 +8,45 @@ description: >-
 
 ## Using the webhook
 
-### Step 1. Tradecloud sends a webhook trigger to your webhook service
+### Tradecloud sends a webhook trigger to your webhook service
 
 When an order or shipment is new or has been changed at Tradecloud, we will trigger your webhook.
 
 {% hint style="info" %}
-You can either choose between the **POST** or **GET** webhook.
+You can either choose between the **POST** or **GET** webhook: 
 
-**POST** which will contain the **order event** or **shipment event** in a JSON body.
+- **POST** will contain the **order event**, **order documents event** or **shipment event** in a JSON or tXML body.
+- **GET** will contain the **order ID** or **shipment ID** as path or query parameter.
 
-**GET** which will contain the **order ID** or **shipment ID** as path or query parameter.
-
-See [the API manual](https://tradecloud.gitbook.io/api/api/webhook-vs-polling) about pro's and cons of either choice.
+See [the API manual](https://docs.tradecloud1.com/api/introduction/api/webhook-vs-polling) to read about pro's and cons of either choice.
 {% endhint %}
 
-{% hint style="warning" %}
-When you **use the order event** it will **ONLY** contain the lines **affected** by the event.
+### Using the POST webhook
 
-When you **use the shipment event** it will contain **ALL** the lines and **ALL** the documents. You can filter new/changed lines and documents based on the `lastChangedAt` fields.
+In case of a **POST** webhook you can use the order data of the **event** inside the request body.
 
-When you **GET the order or shipment yourself** you will get **ALL** the lines. In case of shipments you can filter new/changed lines and documents based on the `lastChangedAt` fields.
-{% endhint %}
+#### Your webhook service downloads the actual document from Tradecloud
 
-In case of a **POST** webhook you can use the **event** inside the request JSON body:
+If you are receiving **order documents events**, the POST request body contains a document `objectId`. You must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
 
-{% hint style="info" %}
-[POST order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-client/specs.yaml#/order-webhook%20endpoints/webhookPost)
+### Using the GET webhook
 
-[POST shipment webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookPost)
-{% endhint %}
-
-In case of a **GET** webhook, the triggered webhook URL contains an order id parameter, for example:
+In case of a **GET** webhook, the triggered webhook URL contains an **order ID** or **shipment ID** parameter, for example:
 
 ```text
 GET https://yourcompany.com/any/order/path/:orderId
 GET https://yourcompany.com/any/shipment/path/:shipmentId
-
-or
-
-GET HTTP://yourcompany.com/any/path?orderId=:orderId
-GET HTTP://yourcompany.com/any/path?shipmentId=:shipmentId
 ```
 
-### Step 2. Your webhook service fetches the actual order or shipment from Tradecloud
+#### Your webhook service fetches the actual order or shipment from Tradecloud
 
-In case of a **GET webhook**, using the **order ID** or **shipment ID** you can fetch the actual order or shipment from Tradecloud:
+When using the **GET webhook**, you must fetch the actual order or shipment from Tradecloud using the **order ID** or **shipment ID**:
 
 ```text
 GET https://api.accp.tradecloud1.com/order/:orderId
 GET https://api.accp.tradecloud1.com/shipment/:shipmentId
 ```
 
-{% hint style="info" %}
-[GET order OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)  
-[GET shipment OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/getShipmentByIdRoute)
-{% endhint %}
-
 ## Next: setting up the webhook
 
 {% page-ref page="setting-up-the-webhook.md" %}
-
