@@ -12,5 +12,5 @@ The buyer and supplier can both attach documents to the order or line.
 | `OrderDocumentsAttachedBySupplier` | Document(s) are attached to the order or line(s) by the supplier |
 
 {% hint style="warning" %}
-Please note these events are not published when documents are embedded in the order and not explicitly attached.
+Please note that these events are not published when documents are embedded in the buyer order message and not explicitly attached.
 {% endhint %}
