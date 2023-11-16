@@ -37,7 +37,7 @@ Your POST **order** webhook must implement the POST order webhook OpenAPI specif
 See [the API manual](https://docs.tradecloud1.com/api/introduction/api/delivery-schedule) to read about the native versus the simple delivery schedule.
 
 {% hint style="warning" %}
-When using the **order event** it will **ONLY** contain the order lines **affected** by the event.
+An `orderEvent` or `simpleOrderEvent` will **ONLY** contain the order lines **affected** by the event.
 {% endhint %}
 
 When using the `orderDocumentsEvent` field, you must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
