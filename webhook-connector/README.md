@@ -8,7 +8,7 @@ description: >-
 
 ## Using the webhook
 
-### Step 1. Tradecloud sends a webhook trigger to your webhook service
+### Tradecloud sends a webhook trigger to your webhook service
 
 When an order or shipment is new or has been changed at Tradecloud, we will trigger your webhook.
 
@@ -25,9 +25,9 @@ See [the API manual](https://docs.tradecloud1.com/api/introduction/api/webhook-v
 
 In case of a **POST** webhook you can use the order data of the **event** inside the request body.
 
-#### Step 2. Your webhook service downloads the actual document from Tradecloud
+#### Your webhook service downloads the actual document from Tradecloud
 
-When using the **order documents event** in the request JSON body, you must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
+If you are receiving **order documents events**, the POST request body contains a document `objectId`. You must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
 
 ### Using the GET webhook
 
@@ -38,7 +38,7 @@ GET https://yourcompany.com/any/order/path/:orderId
 GET https://yourcompany.com/any/shipment/path/:shipmentId
 ```
 
-#### Step 2. Your webhook service fetches the actual order or shipment from Tradecloud
+#### Your webhook service fetches the actual order or shipment from Tradecloud
 
 When using the **GET webhook**, you must fetch the actual order or shipment from Tradecloud using the **order ID** or **shipment ID**:
 

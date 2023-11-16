@@ -1,7 +1,3 @@
----
-description: Shipment Events overview.
----
-
 # Shipment Events
 
 When using the shipment webhook you may configure and receive below shipment events.

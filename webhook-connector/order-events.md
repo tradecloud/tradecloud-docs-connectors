@@ -1,7 +1,3 @@
----
-description: Order Events overview.
----
-
 # Order Events
 
 When using the order webhook you may configure and receive below order events.
@@ -10,7 +6,7 @@ When using the order webhook you may configure and receive below order events.
 
 The buyer can issue new order lines or update existing issued lines.
 
-If confirmed delivery schedule or prices are updated, this will become a reopen request.
+If confirmed delivery schedule or prices are updated, this will become a [reopen request](#order-reopen-request-by-buyer).
 
 | OrderEvent                  | Webhook Configuration |
 | --------------------------- |-----------------------|
@@ -21,7 +17,7 @@ If confirmed delivery schedule or prices are updated, this will become a reopen 
 
 ## Order confirmed by supplier or buyer
 
-The supplier can either accept, reject or propose an alternative (see next section).
+The supplier can either accept, reject or [propose an alternative](#order-proposal-by-supplier).
 
 * Accepted means that the supplier confirmed the order line(s) as requested by the buyer.
 * Rejected means that the supplier cannot deliver the order line(s) at all.
@@ -32,7 +28,6 @@ The supplier can either accept, reject or propose an alternative (see next secti
 | `OrderLinesAcceptedBySupplier`  | Order lines are accepted by the supplier  |
 | `OrderLinesRejectedBySupplier`  | Order lines are rejected by the supplier  |
 | `OrderLinesConfirmedBySupplier` | Order lines are confirmed by the supplier with other values as requested by the buyer |
-
 
 ## Order proposal by supplier
 
@@ -50,7 +45,7 @@ The buyer either approves or rejects the proposal.
 
 The supplier can update existing order lines.
 
-If delivery schedule or prices are updated this will become either a proposal or reopen request.
+If delivery schedule or prices are updated this will become either a [proposal](#order-proposal-by-supplier) or [reopen request](#order-reopen-request-by-supplier).
 
 | OrderEvent                     | Webhook Configuration                        |
 | ------------------------------ | -------------------------------------------- |
