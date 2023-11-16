@@ -58,6 +58,7 @@ A default set of shipments events will be enabled. The actual set you want to se
 
 ![Order Webhook Congfig](../.gitbook/assets/webhook-order-config.png)
 
+Finally, configure the webhook method, URL and credentials
 * Select **GET** or **POST** as HTTP method.
 * Enter your webhook **URL**
   * Must start with **https://**
