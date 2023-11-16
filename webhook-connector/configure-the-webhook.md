@@ -60,7 +60,7 @@ A default set of shipments events will be enabled. The actual set you want to se
 
 * Select **GET** or **POST** as HTTP method.
 * Enter your webhook **URL**
-  * **https** is required.
+  * Must start with **https://**
   * use the **{orderId}** or **{shipmentId}** variable in the URL in case of **GET** method.
 * Enter either **Basic authentication** username and password or a static **Bearer token.**
 * Save the settings
