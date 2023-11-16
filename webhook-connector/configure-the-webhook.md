@@ -54,7 +54,7 @@ A default set of shipments events will be enabled. The actual set you want to se
 
 {% page-ref page="shipment-events.md" %}
 
-### Configure method, url and credentials
+### Method, URL and credentials
 
 ![Order Webhook Congfig](../.gitbook/assets/webhook-order-config.png)
 
