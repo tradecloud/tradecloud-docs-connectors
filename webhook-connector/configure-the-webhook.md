@@ -8,7 +8,7 @@ description: Configurate the webhook in the Tradecloud portal
 
 ### Select one or more webhooks
 
-As a company admin configure one or more webhooks in your company settings on the [Tradecloud1 platform](http://portal.tradecloud1.com):
+A company admin can configure one or more webhooks in your company settings on the [Tradecloud1 platform](http://portal.tradecloud1.com):
 
 ![Webhook Settings](../.gitbook/assets/webhook-settings.png)
 
