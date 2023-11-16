@@ -2,7 +2,7 @@
 
 ## Select one or more webhooks
 
-A company admin can configure one or more webhooks in your company settings on the [Tradecloud1 platform](http://portal.tradecloud1.com):
+A company admin can configure one or more webhooks in your company settings on the [Tradecloud One platform](http://portal.tradecloud1.com):
 
 ![Webhook Settings](../.gitbook/assets/webhook-settings.png)
 
@@ -55,11 +55,12 @@ A default set of shipments events will be enabled. The actual set you want to se
 
 ![Order Webhook Config](../.gitbook/assets/webhook-order-config.png)
 
-Finally, configure the webhook method, URL and credentials
+Finally, configure the webhook method, URL and credentials:
+
 * Select **GET** or **POST** as HTTP method.
 * Enter your webhook URL:
-  * Must start with **https://**
-  * You must use the **{orderId}** or **{shipmentId}** variable in the URL in case of **GET** method.
+  * The URL must start with **https://**
+  * The URL must contain the **{orderId}** or **{shipmentId}** variabl in case of **GET** method.
 * Enter either **Basic authentication** username and password or a static **Bearer token.**
 * Save the settings
 

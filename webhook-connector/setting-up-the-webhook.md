@@ -21,7 +21,9 @@ You can test the security level of your certificate at [SSL Labs](https://www.ss
 
 Your webhook must implement the POST order webhook OpenAPI specifications: 
 
-{% content-ref url="https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost" %}POST order webhook OpenAPI specification{% endcontent-ref %}
+{% hint style="info" %}
+[POST order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookPost)
+{% endhint %}
 
 * Use the `orderEvent` field when using the **native** delivery schedule.
 * Use the `simpleOrderEvent` field when using the **simple**  delivery schedule.
@@ -58,7 +60,7 @@ Your webhook must implement the GET order webhook OpenAPI specification:
 [GET order webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order-webhook-connector/specs.yaml#/order-webhook%20endpoints/webhookGet)
 {% endhint %}
 
-You must fetch the actual order according the GET order OpenAPI specification: 
+You must fetch the actual order according to the GET order OpenAPI specification: 
 
 {% hint style="info" %}
 [GET order OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/order/specs.yaml#/order/getOrderByIdRoute)
@@ -77,15 +79,15 @@ Your webhook must implement the GET order webhook OpenAPI specification:
 [GET shipment webhook OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment-webhook-connector/specs.yaml#/shipment-webhook%20endpoints/webhookGet)
 {% endhint %}
 
-{% hint style="warning" %}
-The shipment will contain **all** the lines. 
-You can filter new/changed shipment lines and documents based on the `lastUpdatedAt` fields.
-{% endhint %}
-
 You must fetch the actual shipment according to the GET shipment OpenAPI specification: 
 
 {% hint style="info" %}
 [GET shipment OpenAPI specification](https://swagger-ui.accp.tradecloud1.com/?url=https://api.accp.tradecloud1.com/v2/shipment/specs.yaml#/shipment/getShipmentByIdRoute)
+{% endhint %}
+
+{% hint style="warning" %}
+The shipment will contain **all** the lines. 
+You can filter new/changed shipment lines and documents based on the `lastUpdatedAt` fields.
 {% endhint %}
 
 ## Next: configure the webhook
