@@ -60,9 +60,9 @@ The supplier can either approve or reject the reopen request.
 
 | OrderEvent                                  | Webhook Configuration                        |
 | ------------------------------------------- | -------------------------------------------- |
-| `OrderLinesReopenRequestedByBuyer`          | Order lines reopen is requested by buyer     |
-| `OrderLinesReopenRequestApprovedBySupplier` | Buyer reopen request is approved by supplier |
-| `OrderLinesReopenRequestRejectedBySupplier` | Buyer reopen request is rejected by supplier |
+| `OrderLinesReopenRequestedByBuyer`          | Order lines reopen is requested by the buyer     |
+| `OrderLinesReopenRequestApprovedBySupplier` | Buyer reopen request is approved by the supplier |
+| `OrderLinesReopenRequestRejectedBySupplier` | Buyer reopen request is rejected by the supplier |
 
 ## Order reopen request by supplier
 
