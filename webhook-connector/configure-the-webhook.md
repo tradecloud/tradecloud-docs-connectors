@@ -40,7 +40,7 @@ Enable the **Order Documents Webhook Integration** if you want to receive a webh
 
 ![Order Documents Events](../.gitbook/assets/webhook-order-documents-events.png)
 
-A default set of order document events will be enabled. The actual set you want to select wil be dependent on the capabilities of your integration and ERP system. You can find a list of events here:
+You may choose whether you want to receive events for documents added by the buyer of an order, the suppplier, or both. You can find a list of events here:
 
 {% page-ref page="order-documents-events.md" %}
 
