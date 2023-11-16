@@ -46,7 +46,7 @@ You may choose whether you want to receive events for documents added by the buy
 
 ### Shipments Webhook Integration
 
-Enable the **Order Webhook Integration** if you want to receive a webhook trigger when a shipment has been issued or changed:
+Enable the **Shipment Webhook Integration** if you want to receive a webhook trigger when a shipment has been issued or changed:
 
 ![Shipment Events](../.gitbook/assets/webhook-shipment-events.png)
 
