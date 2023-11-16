@@ -39,4 +39,4 @@ The buyer can resend a shipment to their ERP.
 
 | ShipmentEvent                        | Webhook Configuration |
 | ------------------------------------ | --------------------- |
-| `ShipmentResentByBuyer`              | The shipment is manual resend by the buyer |
+| `ShipmentResentByBuyer`              | The shipment is manual resent by the buyer |
