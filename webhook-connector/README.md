@@ -15,7 +15,7 @@ When an order or shipment is new or has been changed at Tradecloud, we will trig
 {% hint style="info" %}
 You can either choose between the **POST** or **GET** webhook: 
 
-- **POST** will contain the **order event**, **order documents event** or **shipment event** in a JSON or tXML body.
+- **POST** will contain the **order**, **order documents** or **shipment event** in a JSON or tXML body.
 - **GET** will contain the **order ID** or **shipment ID** as path or query parameter.
 
 See [the API manual](https://docs.tradecloud1.com/api/introduction/api/webhook-vs-polling) to read about pro's and cons of either choice.
@@ -23,9 +23,9 @@ See [the API manual](https://docs.tradecloud1.com/api/introduction/api/webhook-v
 
 ### Using the POST webhook
 
-In case of a **POST** webhook you can use the order data of the **event** inside the request body.
+In case of a **POST** webhook you can use the data of the **event** inside the request body.
 
-#### Your webhook service downloads the actual document from Tradecloud
+#### Your webhook service must download the document content from Tradecloud
 
 If you are receiving **order documents events**, the POST request body contains a document `objectId`. You must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
 
