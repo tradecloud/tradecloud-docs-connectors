@@ -58,9 +58,9 @@ Configure the webhook method and endpoint URL:
 ![Webhook method and URL](../.gitbook/assets/webhook-url.png)
 
 - Select **GET** or **POST** as HTTP method.
-- Enter your webhook URL:
+- Enter your webhook endpoint URL:
   - The URL must start with **https://**
-  - The URL must contain the **{orderId}** or **{shipmentId}** variabl in case of **GET** method.
+  - The URL must contain the **{orderId}** or **{shipmentId}** variable in case of **GET** method.
 
 ## Credentials
 
@@ -68,7 +68,7 @@ Finally, configure the credentials. Choose either Basic authentication, Bearer t
 
 ### Basic authentication
 
-Tradecloud supports Basic authentication, where the client sends a HTTPS request with the `Authorization` header that contains the word Basic word followed by a space and a base64-encoded string username:password.
+Tradecloud supports [Basic authentication](https://swagger.io/docs/specification/authentication/basic-authentication), where the client sends a HTTPS request with the `Authorization` header that contains the word `Basic` followed by a space and a base64-encoded string username:password.
 
 Published as [RFC 7617 "The 'Basic' HTTP Authentication Scheme"](https://datatracker.ietf.org/doc/html/rfc7617)
 
@@ -78,7 +78,7 @@ Fill in username and password, as provided by your webhook configuration, and sa
 
 ### Bearer token
 
-Tradecloud supports a Bearer token, where the client sends a HTTPS request with the `Bearer` header that contains the static token.
+Tradecloud supports [Bearer authentication](https://swagger.io/docs/specification/authentication/bearer-authentication/), where the client sends a HTTPS request with the `Authorization` header that contains word `Bearer` followed by a space and the static token.
 
 Published as [RFC 6750 "The OAuth 2.0 Authorization Framework: Bearer Token Usage"](https://datatracker.ietf.org/doc/html/rfc6750)
 
@@ -99,10 +99,10 @@ Published as the [RFC 6749 "Oauth 2.0 Client Credentials Grant"](https://datatra
 
 Fill in the fields:
 
-- `authentication URL`: the Oauth 2.0 token endpoint including your `Directory (tenant) ID`, for example `https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token`
+- `authentication URL`: the OAuth 2.0 token endpoint including your `Directory (tenant) ID`, for example `https://login.microsoftonline.com/<Tenant ID>/oauth2/v2.0/token`
 - `client ID`: the `Application (client) ID` of your webhook client app as configured in Ms Azure AD
 - `client Secret`: the `Client Secret Value` of your webhook client app as configured in Ms Azure AD
-- `scope`: the scope granted to the webhook client app, for example containing the webhook server app endpoint `https://<webhook endpoint>/.default`.
+- `scope`: the scope granted to the webhook client app, for example containing the webhook endpoint `https://<webhook endpoint>/.default`.
 
 ## Testing
 

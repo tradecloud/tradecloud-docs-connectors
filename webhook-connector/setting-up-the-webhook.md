@@ -10,7 +10,7 @@ To receive a webhook trigger you will need:
 - The web service must support **SSL** only and you will need a SSL certificate.
 - The web service must be configured to use **TLS v1.2** or **v1.3**.
 - Self-signed certificates are NOT supported.
-- The web service must support either  **basic authentication**, **static bearer token** or **OAuth 2.0 Client Credentials Grant**
+- The web service must support either  **basic authentication**, **static bearer token** or **OAuth 2.0 Client Credentials Grant**.
 - The supported HTTP method should be either **POST** or **GET**.
 
 {% hint style="info" %}

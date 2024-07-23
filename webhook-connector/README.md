@@ -25,7 +25,7 @@ See [the API manual](https://docs.tradecloud1.com/api/introduction/api/webhook-v
 
 In case of a **POST** webhook you can use the data of the **event** inside the request body.
 
-#### Your webhook service must download the document content from Tradecloud
+#### Your webhook service must download the actual document from Tradecloud
 
 If you are receiving **order documents events**, the POST request body contains a document `objectId`. You must [download the document](https://docs.tradecloud1.com/api/processes/order/buyer/receive/download-document) as the document content is not embedded in the event itself.
 
@@ -38,7 +38,7 @@ GET https://yourcompany.com/any/order/path/:orderId
 GET https://yourcompany.com/any/shipment/path/:shipmentId
 ```
 
-#### Your webhook service fetches the actual order or shipment from Tradecloud
+#### Your webhook service must fetch the actual order or shipment from Tradecloud
 
 When using the **GET webhook**, you must fetch the actual order or shipment from Tradecloud using the **order ID** or **shipment ID**:
 
