@@ -82,7 +82,7 @@ The buyer can cancel and revert cancellation of order lines.
 
 | OrderEvent                           | Webhook Configuration                           |
 | ------------------------------------ | ----------------------------------------------- |
-| `OrderLinesCancelledByBuyer`         | Order lines are cancelled by the buyer          |
+| `OrderLinesCancelledByBuyer`         | Ogiorder lines are cancelled by the buyer          |
 | `CancelledOrderLinesRevertedByBuyer` | Cancelled order lines are reverted by the buyer |
 
 ## Order lines completed by buyer
