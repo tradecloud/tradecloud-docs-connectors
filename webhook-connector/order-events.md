@@ -76,13 +76,24 @@ The buyer can either approve or reject the reopen request.
 | `OrderLinesReopenRequestApprovedByBuyer` | Supplier reopen request is approved by the buyer |
 | `OrderLinesReopenRequestRejectedByBuyer` | Supplier reopen request is rejected by the buyer |
 
+## Order reconfirmation request by buyer
+
+The buyer can request to reconfirm order lines.
+
+The supplier can either reconfirm or do a counter reopen request.
+
+| OrderEvent                                 | Webhook Configuration                                |
+| ------------------------------------------ | ---------------------------------------------------- |
+| `OrderLinesReconfirmationRequestedByBuyer` | Order lines reconfirmation is requested by the buyer |
+| `OrderLinesReconfirmedBySupplier`          | Order lines are reconfirmed by the supplier          |
+
 ## Order lines cancelled by buyer
 
 The buyer can cancel and revert cancellation of order lines.
 
 | OrderEvent                           | Webhook Configuration                           |
 | ------------------------------------ | ----------------------------------------------- |
-| `OrderLinesCancelledByBuyer`         | Ogiorder lines are cancelled by the buyer          |
+| `OrderLinesCancelledByBuyer`         | Order lines are cancelled by the buyer          |
 | `CancelledOrderLinesRevertedByBuyer` | Cancelled order lines are reverted by the buyer |
 
 ## Order lines completed by buyer
