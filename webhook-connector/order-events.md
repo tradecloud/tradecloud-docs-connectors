@@ -80,7 +80,7 @@ The buyer can either approve or reject the reopen request.
 
 The buyer can request to reconfirm order lines.
 
-The supplier can either reconfirm or do a counter reopen request.
+The supplier can either reconfirm or do a reopen request.
 
 | OrderEvent                                 | Webhook Configuration                                |
 | ------------------------------------------ | ---------------------------------------------------- |
