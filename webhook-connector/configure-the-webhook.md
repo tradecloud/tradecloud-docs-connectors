@@ -57,10 +57,13 @@ Configure the webhook method and endpoint URL:
 
 ![Webhook method and URL](../.gitbook/assets/webhook-url.png)
 
-- Select **GET** or **POST** as HTTP method.
+- Select **POST** as HTTP method.
 - Enter your webhook endpoint URL:
   - The URL must start with **https://**
-  - The URL must contain the **{orderId}** or **{shipmentId}** variable in case of **GET** method.
+
+{% hint style="info" %}
+Only `POST` is supported as HTTP method.
+{% endhint %}
 
 ## Credentials
 
