@@ -107,10 +107,14 @@ The buyer can complete and revert completion of order lines.
 
 ## Order lines logistics
 
-Both buyer and supplier can update delivery schedule logistics fields `status`, `etd` and `eta`
+Both buyer and supplier can (indirectly) update the order line logistics status and delivery schedule logistics fields `status`, `etd` and `eta`
 
 | OrderEvent                                             | Webhook Configuration |
 | ------------------------------------------------------ | --------------------- |
+| `OrderLinesMarkedAsDeliveredByBuyer`                   | Order lines are marked as delivered by the buyer    |
+| `OrderLinesMarkedAsDeliveredBySupplier`                | Order lines are marked as delivered by the supplier |
+| `OrderLinesMarkedAsOpenByBuyer`                        | Order lines are marked as open by the buyer         |
+| `OrderLinesMarkedAsOpenBySupplier`                     | Order lines are marked as open by the supplier      |
 | `OrderLinesDeliveryScheduleLogisticsUpdatedByBuyer`    | Delivery schedule logistics fields are updated by the buyer    |
 | `OrderLinesDeliveryScheduleLogisticsUpdatedBySupplier` | Delivery schedule logistics fields are updated by the supplier |
 
